@@ -145,14 +145,14 @@
 #else  /* otherwise use 'long' */
 #define LUA_INT_TYPE	LUA_INT_LONG
 #endif
-#define LUA_FLOAT_TYPE	LUA_FLOAT_FLOAT
+#define LUA_FLOAT_TYPE	LUA_FLOAT_LONGDOUBLE
 
 #elif defined(LUA_C89_NUMBERS)	/* }{ */
 /*
 ** largest types available for C89 ('long' and 'double')
 */
 #define LUA_INT_TYPE	LUA_INT_LONG
-#define LUA_FLOAT_TYPE	LUA_FLOAT_DOUBLE
+#define LUA_FLOAT_TYPE	LUA_FLOAT_LONGDOUBLE
 
 #endif				/* } */
 
@@ -165,7 +165,7 @@
 #endif
 
 #if !defined(LUA_FLOAT_TYPE)
-#define LUA_FLOAT_TYPE	LUA_FLOAT_DOUBLE
+#define LUA_FLOAT_TYPE	LUA_FLOAT_LONGDOUBLE
 #endif
 
 /* }================================================================== */
@@ -222,8 +222,7 @@
 #define LUA_CPATH_DEFAULT \
 		LUA_CDIR"?.dll;" \
 		LUA_CDIR"..\\lib\\lua\\" LUA_VDIR "\\?.dll;" \
-		LUA_CDIR"loadall.dll;" ".\\?.dll;" \
-		LUA_CDIR"?54.dll;" ".\\?54.dll"
+		LUA_CDIR"loadall.dll;" ".\\?.dll"
 #endif
 
 #else			/* }{ */
@@ -241,8 +240,7 @@
 
 #if !defined(LUA_CPATH_DEFAULT)
 #define LUA_CPATH_DEFAULT \
-		LUA_CDIR"?.so;" LUA_CDIR"loadall.so;" "./?.so;" \
-		LUA_CDIR"lib?54.so;" "./lib?54.so"
+		LUA_CDIR"?.so;" LUA_CDIR"loadall.so;" "./?.so"
 #endif
 
 #endif			/* } */
@@ -460,7 +458,7 @@
 #define LUAI_UACNUMBER	long double
 
 #define LUA_NUMBER_FRMLEN	"L"
-#define LUA_NUMBER_FMT		"%.19Lg"
+#define LUA_NUMBER_FMT		"%.90Lg"
 
 #define l_mathop(op)		op##l
 
