@@ -8,19 +8,38 @@
 
 class System {
 protected:
-    double value;
+    long double value;
 public:
+    /**
+     * Default System's constructor
+     */
     System();
-    System (float);
+    /**
+     * System's constructor with a initial value
+     */
+    System(long double);
+    /**
+     * Constructor of copy
+     * @param system
+     */
     System(System *system);
+    /**
+     * Set a value
+     * @param value
+     */
+    void setValue(long double value);
+    /**
+     * Get a value
+     * @return
+     */
+    long double getValue();
 
-    void setValue(double value);
-    double getValue();
 private:
     /** Operator overload */
-    System& operator= (const System&);
+    System &operator=(const System &);
+
     /**  Operator == overload */
-    bool operator== (const System&);
+    bool operator==(const System &);
 };
 
 
