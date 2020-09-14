@@ -26,3 +26,10 @@ void System::setValue(long double value) {
     this->value = value;
 }
 
+bool System::operator==(const System &sys) {
+    if (this == &sys)
+        return true;
+    else
+        return false;
+}
+

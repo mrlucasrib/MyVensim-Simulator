@@ -78,3 +78,21 @@ Flux::Flux(System *from, System *to, const char *formula) {
     this->target = to;
     this->formula = formula;
 }
+
+bool Flux::operator==(const Flux &flux) {
+    if (this->target == flux.target && this->source == flux.source)
+        return true;
+    else
+        return false;
+}
+
+Flux& Flux::operator= (const Flux &flux)
+{
+    if(this == &flux)
+        return *this;
+
+    this->source = flux.source;
+    this->target = flux.target;
+
+    return *this;
+}

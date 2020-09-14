@@ -63,6 +63,11 @@ public:
      * Clear System's source
      */
     void clearSource();
+private:
+    /** operator = overload */
+    Flux& operator= (const Flux&);
+    /** operator == overload */
+    bool operator== (const Flux&);
 
 };
 

@@ -51,3 +51,12 @@ void Model::execute(int start, int end) {
     }
 }
 
+bool Model::operator==(const Model &model) {
+    if(this == &model)
+        return true;
+    if(this->flux_vector.size() != model.flux_vector.size())
+        return false;
+
+    return true;
+}
+
