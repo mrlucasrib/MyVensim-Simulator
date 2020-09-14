@@ -10,7 +10,7 @@ class funcional_test {
 public:
     static void exponentialTest();
     static void LogTest();
-    void ultimateTest();
+    static void ultimateTest();
 };
 
 

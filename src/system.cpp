@@ -6,7 +6,7 @@
 
 using namespace std;
 
-System::System(float value) {
+System::System(long double value) {
     this->value = value;
 }
 
@@ -18,11 +18,11 @@ System::System() {
     this->value = 0;
 }
 
-double System::getValue() {
+long double System::getValue() {
     return this->value;
 }
 
-void System::setValue(double value) {
+void System::setValue(long double value) {
     this->value = value;
 }
 

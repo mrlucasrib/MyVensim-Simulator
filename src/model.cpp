@@ -41,7 +41,7 @@ void Model::remove(System *s) {
 void Model::execute(int start, int end) {
     for (int i = start; i < end; ++i) {
         for (auto flux : this->flux_vector) {
-            double value = flux->execute();
+            long double value = flux->execute();
             flux->getSource()->setValue(flux->getSource()->getValue() - value);
             flux->getTarget()->setValue(flux->getTarget()->getValue() + value);
 

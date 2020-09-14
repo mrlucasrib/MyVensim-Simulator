@@ -22,4 +22,4 @@ add_executable(MyVensim
         src/system.h
         test/funcional_test.cpp
         )
-target_link_libraries(MyVensim ${CMAKE_SOURCE_DIR}/lua54/liblua54.a)
+target_link_libraries(MyVensim ${CMAKE_SOURCE_DIR}/lua54/lib/liblua.a)

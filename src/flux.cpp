@@ -36,8 +36,8 @@ void Flux::clearTarget() {
 }
 
 
-double Flux::execute() {
-    double result = 0;
+float Flux::execute() {
+    long double result = 0;
     lua_State *L = luaL_newstate();
 //    Add math Library
     luaL_requiref(L, "math", luaopen_math, 1);
@@ -52,13 +52,15 @@ double Flux::execute() {
         lua_getglobal(L, "result");
 
         if (lua_isnumber(L, -1)) {
-            result = (double) lua_tonumber(L, -1);
+            result = lua_tonumber(L, -1);
         } else {
             const char *errmsg = lua_tostring(L, -1);
+            throw;
         }
 
     } else {
         const char *errmsg = lua_tostring(L, -1);
+        throw;
     }
 
     lua_close(L);
@@ -68,5 +70,11 @@ double Flux::execute() {
 }
 
 void Flux::setFormula(const char *formula) {
+    this->formula = formula;
+}
+
+Flux::Flux(System *from, System *to, const char *formula) {
+    this->source = from;
+    this->target = to;
     this->formula = formula;
 }
