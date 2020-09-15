@@ -36,7 +36,7 @@ void Flux::clearTarget() {
 }
 
 
-float Flux::execute() {
+long double Flux::execute() {
     long double result = 0;
     lua_State *L = luaL_newstate();
 //    Add math Library

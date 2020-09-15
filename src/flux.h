@@ -34,7 +34,7 @@ public:
      * Performs the flow
      * @return Return the result of the formula
      */
-    float execute();
+    long double execute();
     /**
      * Set formula to be executed
      * @param formula
