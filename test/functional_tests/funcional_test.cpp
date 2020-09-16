@@ -7,11 +7,12 @@
 #include "../flux_concret.h"
 #include <cassert>
 #include <cmath>
+#include <systemImpl.h>
 
 void funcional_test::exponentialTest() {
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *f = new FluxExp(s1, s2);
     m->add(f);
     s1->setValue(100);
@@ -26,7 +27,7 @@ void funcional_test::exponentialTest() {
 void funcional_test::LogTest() {
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *f = new FluxLog(s1, s2);
     m->add(f);
     s1->setValue(100);
@@ -38,7 +39,7 @@ void funcional_test::LogTest() {
 }
 
 void funcional_test::ultimateTest() {
-    auto *modelo = new ModelImp();
+    auto *modelo = new ModelImpl();
     auto *q1 = new SystemImpl(100);
     auto *q2 = new SystemImpl(0.0);
     auto *q3 = new SystemImpl(100);
@@ -68,4 +69,5 @@ void funcional_test::ultimateTest() {
     assert(fabs(q5->getValue() - 16.4612) < 0.0001);
 
 }
+
 

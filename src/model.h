@@ -7,18 +7,8 @@
 
 #include "flux.h"
 #include "system.h"
-
 class Model {
-private:
-    /**
-     * Time it takes to run
-     */
-    double time;
 
-    virtual Model &operator=(const Model &) = 0;
-
-    /** operator == overload */
-    virtual bool operator==(const Model &) = 0;
 
 public:
     /**
@@ -35,11 +25,6 @@ public:
      */
     virtual void add(Flux *f) = 0;
 
-    /**
-     * Remove a System to Model
-     * @param s
-     */
-    virtual void remove(System *s) = 0;
 
     /**
      * Remove a flow to Model

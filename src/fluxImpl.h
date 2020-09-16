@@ -5,18 +5,18 @@
 #ifndef MYVENSIM_FLUXIMPL_H
 #define MYVENSIM_FLUXIMPL_H
 
-#include "systemImpl.h"
 #include "flux.h"
 
 class FluxImpl : public Flux {
 protected:
-    SystemImpl *source;
-    SystemImpl *target;
+    System *source;
+    System *target;
 public:
     /**
      * Default Flux's constructor
      */
     FluxImpl();
+
     /**
      * Constructor of copy
      * @param f FluxImpl
@@ -28,7 +28,7 @@ public:
      * @param from SystemImpl source
      * @param to SystemImpl target
      */
-    FluxImpl(SystemImpl *from, SystemImpl *to);
+    FluxImpl(System *from, System *to);
 
     /**
      * Performs the flow
@@ -46,13 +46,13 @@ public:
      * Get SystemImpl target
      * @return
      */
-    SystemImpl *getTarget();
+    System *getTarget();
 
     /**
      * Get SystemImpl's source
      * @return
      */
-    SystemImpl *getSource();
+    System *getSource();
 
     /**
      * Clear SystemImpl's taget
@@ -64,8 +64,9 @@ public:
      */
     void clearSource() override;
 
-    void setSource(System*);
+    void setSource(System *);
 
+    ~FluxImpl() override = default;
 
     /** operator = overload */
     FluxImpl &operator=(const FluxImpl &);

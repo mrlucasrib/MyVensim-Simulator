@@ -4,7 +4,7 @@
 
 #ifndef MYVENSIM_FLUX_CONCRET_H
 #define MYVENSIM_FLUX_CONCRET_H
-#include "../src/modelImpl.h"
+#include "../src/fluxImpl.h"
 
 
 class FluxExp : public FluxImpl {
@@ -16,7 +16,8 @@ public:
 
     FluxExp() : FluxImpl() {}
 
-    FluxExp(SystemImpl *s1, SystemImpl *s2) : FluxImpl(s1, s2) {}
+
+    FluxExp(System *s1, System *s2) : FluxImpl(s1, s2) {}
 };
 
 class FluxLog : public FluxImpl {
@@ -26,13 +27,14 @@ public:
 
     FluxLog() : FluxImpl() {}
 
-    FluxLog(SystemImpl *s1, SystemImpl *s2) : FluxImpl(s1, s2) {}
+    FluxLog(System *s1, System *s2) : FluxImpl(s1, s2) {}
 
     FluxLog(FluxLog *f) : FluxImpl(f) {}
 
 
 
 };
+
 
 
 #endif //MYVENSIM_FLUX_CONCRET_H

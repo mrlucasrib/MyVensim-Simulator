@@ -32,6 +32,7 @@ void runTests::Run() {
     system_test::setValueTest();
     system_test::comparisonTest();
 }
+
 int main() {
     runTests::Run();
     return 0;

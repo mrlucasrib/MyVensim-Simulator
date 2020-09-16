@@ -4,20 +4,20 @@
 
 #include "modelImpl.h"
 
-ModelImp::ModelImp(ModelImp *model) {
+ModelImpl::ModelImpl(ModelImpl *model) {
     this->flux_vector = model->flux_vector;
 }
 
-ModelImp::ModelImp() {
+ModelImpl::ModelImpl() {
     this->flux_vector.clear();
 }
 
-void ModelImp::add(FluxImpl *f) {
+void ModelImpl::add(Flux *f) {
     this->flux_vector.push_back(f);
 }
 
 
-void ModelImp::remove(Flux *f) {
+void ModelImpl::remove(Flux *f) {
     for (int i = 0; i < this->flux_vector.size(); ++i) {
         if (this->flux_vector[i] == f) {
             this->flux_vector.erase(this->flux_vector.begin() + i);
@@ -26,18 +26,7 @@ void ModelImp::remove(Flux *f) {
 }
 
 
-void ModelImp::execute(int start, int end) {
-//    for (int i = start; i < end; ++i) {
-//        for (auto flux : this->flux_vector) {
-//            float value;
-//            value = flux->execute();
-//            auto v1 = flux->getSource()->getValue() - value;
-//            auto v2 = flux->getTarget()->getValue() + value;
-//            flux->getSource()->setValue(v1);
-//            flux->getTarget()->setValue(v2);
-//
-//        }
-
+void ModelImpl::execute(int start, int end) {
     std::vector<double> v;
     std::vector<double>::iterator vIt;
 
@@ -69,7 +58,7 @@ void ModelImp::execute(int start, int end) {
     }
 }
 
-bool ModelImp::operator==(const ModelImp &model) {
+bool ModelImpl::operator==(const ModelImpl &model) {
     if(this == &model)
         return true;
     if(this->flux_vector.size() != model.flux_vector.size())

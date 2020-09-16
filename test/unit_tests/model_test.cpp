@@ -6,9 +6,10 @@
 #include "../src/modelImpl.h"
 #include "../flux_concret.h"
 #include <cassert>
+#include "systemImpl.h"
 
 void model_test::addTest() {
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *f = new FluxExp(s1, s2);
@@ -17,7 +18,7 @@ void model_test::addTest() {
 }
 
 void model_test::removeTest() {
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *f = new FluxExp(s1, s2);
@@ -27,19 +28,19 @@ void model_test::removeTest() {
 }
 
 void model_test::comparisonTest() {
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *f = new FluxExp(s1, s2);
 
-    auto *m1 = new ModelImp();
+    auto *m1 = new ModelImpl();
     m->add(f);
     m1->add(f);
     assert(m == m1);
 }
 
 void model_test::copyTest() {
-    auto *m = new ModelImp();
+    auto *m = new ModelImpl();
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *f = new FluxExp(s1, s2);

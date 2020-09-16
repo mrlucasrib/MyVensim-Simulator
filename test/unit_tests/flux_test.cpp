@@ -5,6 +5,7 @@
 #include "flux_test.h"
 #include "../flux_concret.h"
 #include <cassert>
+#include <systemImpl.h>
 
 void flux_test::getSource() {
     auto *s1 = new SystemImpl();

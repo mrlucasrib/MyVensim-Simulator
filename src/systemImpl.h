@@ -4,9 +4,10 @@
 
 #ifndef MYVENSIM_SYSTEMIMPL_H
 #define MYVENSIM_SYSTEMIMPL_H
+
 #include "system.h"
 
-class SystemImpl: public System {
+class SystemImpl : public System {
 protected:
     float value;
 public:
@@ -14,20 +15,24 @@ public:
      * Default SystemImpl's constructor
      */
     SystemImpl();
+
     /**
      * SystemImpl's constructor with a initial value
      */
     explicit SystemImpl(float);
+
     /**
      * Constructor of copy
      * @param system
      */
     explicit SystemImpl(SystemImpl *system);
+
     /**
      * Set a value
      * @param value
      */
     void setValue(float) override;
+
     /**
      * Get a value
      * @return
@@ -35,7 +40,8 @@ public:
     float getValue() override;
 
     ~SystemImpl() override = default;
-private:
+
+
     /** Operator overload */
     SystemImpl &operator=(const SystemImpl &);
 

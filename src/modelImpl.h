@@ -6,31 +6,29 @@
 #define MYVENSIM_MODELIMPL_H
 
 #include <vector>
-#include "systemImpl.h"
-#include "fluxImpl.h"
-
-class ModelImp {
+#include "model.h"
+class ModelImpl : public Model {
 private:
     /**
      * Time it takes to run
      */
     double time;
 
-    ModelImp &operator=(const ModelImp &);
+    ModelImpl &operator=(const ModelImpl &);
 
     /** operator == overload */
-    bool operator==(const ModelImp &);
+    bool operator==(const ModelImpl &);
 
 public:
     /**
-     * Default ModelImp's constructor
+     * Default ModelImpl's constructor
      */
-    ModelImp();
+    ModelImpl();
 
     /**
      * Constructor of copy
      */
-    explicit ModelImp(ModelImp *);
+    explicit ModelImpl(ModelImpl *);
 
     /**
      * Run simulation
@@ -41,10 +39,10 @@ public:
 
     void remove(Flux*);
     /**
-     * Add a Flow to ModelImp
+     * Add a Flow to ModelImpl
      * @param f
      */
-    void add(FluxImpl *f);
+    void add(Flux *f);
     /**
      * Flow vector
      */

@@ -9,20 +9,20 @@ FluxImpl::FluxImpl() {
     this->target = nullptr;
 }
 
-FluxImpl::FluxImpl(SystemImpl *from, SystemImpl *to) {
+FluxImpl::FluxImpl(System *from, System *to) {
     this->source = from;
     this->target = to;
 }
 
-SystemImpl *FluxImpl::getSource() {
+System *FluxImpl::getSource() {
     return this->source;
 }
 
 void FluxImpl::setTarget(System *s) {
-    this->target = (SystemImpl*) s;
+    this->target = (System*) s;
 }
 
-SystemImpl *FluxImpl::getTarget() {
+System *FluxImpl::getTarget() {
     return this->target;
 }
 
@@ -58,5 +58,5 @@ FluxImpl::FluxImpl(FluxImpl *f) {
 }
 
 void FluxImpl::setSource(System *s) {
-    source = (SystemImpl*) s;
+    source = s;
 }
