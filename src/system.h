@@ -1,46 +1,26 @@
 //
-// Created by lucas on 11/09/2020.
+// Created by lucas on 14/09/2020.
 //
 
 #ifndef MYVENSIM_SYSTEM_H
 #define MYVENSIM_SYSTEM_H
 
+#endif //MYVENSIM_SYSTEM_H
 
 class System {
-protected:
-    long double value;
+
 public:
-    /**
-     * Default System's constructor
-     */
-    System();
-    /**
-     * System's constructor with a initial value
-     */
-    System(long double);
-    /**
-     * Constructor of copy
-     * @param system
-     */
-    System(System *system);
     /**
      * Set a value
      * @param value
      */
-    void setValue(long double value);
+    virtual void setValue(float) = 0;
+
     /**
      * Get a value
      * @return
      */
-    long double getValue();
+    virtual float getValue() = 0;
 
-private:
-    /** Operator overload */
-    System &operator=(const System &);
-
-    /**  Operator == overload */
-    bool operator==(const System &);
+    virtual ~System() {};
 };
-
-
-#endif //MYVENSIM_SYSTEM_H

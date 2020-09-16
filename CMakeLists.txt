@@ -1,25 +1,16 @@
 cmake_minimum_required(VERSION 3.17)
 project(MyVensim)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 
-include_directories(lua54)
-include_directories(lua54/include)
 include_directories(src)
 
 add_executable(MyVensim
-        lua54/include/lauxlib.h
-        lua54/include/lua.h
-        lua54/include/lua.hpp
-        lua54/include/luaconf.h
-        lua54/include/lualib.h
-        src/flux.cpp
-        src/flux.h
-        src/main.cpp
-        src/model.cpp
-        src/model.h
-        src/system.cpp
-        src/system.h
-        test/funcional_test.cpp
-        )
-target_link_libraries(MyVensim ${CMAKE_SOURCE_DIR}/lua54/lib/liblua.a)
+        src/fluxImpl.cpp
+        src/fluxImpl.h
+        src/modelImpl.cpp
+        src/modelImpl.h
+        src/systemImpl.cpp
+        src/systemImpl.h
+        test/functional_tests/funcional_test.cpp
+        test/unit_tests/system_test.cpp test/unit_tests/system_test.h test/unit_tests/flux_test.cpp test/unit_tests/flux_test.h test/unit_tests/model_test.cpp test/unit_tests/model_test.h test/flux_concret.cpp test/flux_concret.h test/runTests.cpp test/runTests.h)

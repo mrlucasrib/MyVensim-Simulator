@@ -1,13 +1,12 @@
 //
-// Created by lucas on 11/09/2020.
+// Created by lucas on 14/09/2020.
 //
 
 #ifndef MYVENSIM_MODEL_H
 #define MYVENSIM_MODEL_H
 
-#include <vector>
-#include "system.h"
 #include "flux.h"
+#include "system.h"
 
 class Model {
 private:
@@ -16,60 +15,37 @@ private:
      */
     double time;
 
-    Model &operator=(const Model &);
+    virtual Model &operator=(const Model &) = 0;
 
     /** operator == overload */
-    bool operator==(const Model &);
+    virtual bool operator==(const Model &) = 0;
 
 public:
-    /**
-     * Default Model's constructor
-     */
-    Model();
-
-    /**
-     * Constructor of copy
-     */
-    explicit Model(Model *);
-
     /**
      * Run simulation
      * @param start
      * @param end
      */
-    void execute(int start, int end);
+    virtual void execute(int start, int end) = 0;
 
-    /**
-     * Add a system to Model
-     * @param s
-     */
-    void add(System *s);
 
     /**
      * Add a Flow to Model
      * @param f
      */
-    void add(Flux *f);
+    virtual void add(Flux *f) = 0;
 
     /**
      * Remove a System to Model
      * @param s
      */
-    void remove(System *s);
+    virtual void remove(System *s) = 0;
 
     /**
      * Remove a flow to Model
      * @param f
      */
-    void remove(Flux *f);
-
-protected:
-    /**
-     * Flow vector
-     */
-    std::vector<Flux *> flux_vector;
-    std::vector<System *> system_vector;
+    virtual void remove(Flux *f) = 0;
 };
-
 
 #endif //MYVENSIM_MODEL_H
