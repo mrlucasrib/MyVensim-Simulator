@@ -5,7 +5,6 @@
 #ifndef MYVENSIM_SYSTEM_H
 #define MYVENSIM_SYSTEM_H
 
-#endif //MYVENSIM_SYSTEM_H
 
 class System {
 
@@ -22,5 +21,6 @@ public:
      */
     virtual float getValue() = 0;
 
-    virtual ~System() {};
+    virtual ~System() = default;
 };
+#endif //MYVENSIM_SYSTEM_H

@@ -5,8 +5,7 @@
 #ifndef MYVENSIM_FLUX_H
 #define MYVENSIM_FLUX_H
 
-#endif //MYVENSIM_FLUX_H
-
+#include "system.h"
 class Flux {
 public:
 
@@ -41,8 +40,10 @@ public:
     virtual void clearSource() = 0;
 
     virtual void setSource(System*) = 0;
+    virtual ~Flux() = default;
 
 //
 //    /** operator == overload */
 //    virtual bool operator==(const Flux &o) = 0;
 };
+#endif //MYVENSIM_FLUX_H
