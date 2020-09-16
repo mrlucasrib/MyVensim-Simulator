@@ -12,12 +12,12 @@ ModelImpl::ModelImpl() {
     this->flux_vector.clear();
 }
 
-void ModelImpl::add(Flux *f) {
+void ModelImpl::add(Flow *f) {
     this->flux_vector.push_back(f);
 }
 
 
-void ModelImpl::remove(Flux *f) {
+void ModelImpl::remove(Flow *f) {
     for (int i = 0; i < this->flux_vector.size(); ++i) {
         if (this->flux_vector[i] == f) {
             this->flux_vector.erase(this->flux_vector.begin() + i);

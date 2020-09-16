@@ -4,32 +4,32 @@
 
 #ifndef MYVENSIM_FLUX_CONCRET_H
 #define MYVENSIM_FLUX_CONCRET_H
-#include "../src/fluxImpl.h"
+#include "../src/flowImpl.h"
 
 
-class FluxExp : public FluxImpl {
+class FluxExp : public FlowImpl {
 
     float execute() override;
 
 public:
-    FluxExp(FluxExp *f) : FluxImpl(f) {}
+    FluxExp(FluxExp *f) : FlowImpl(f) {}
 
-    FluxExp() : FluxImpl() {}
+    FluxExp() : FlowImpl() {}
 
 
-    FluxExp(System *s1, System *s2) : FluxImpl(s1, s2) {}
+    FluxExp(System *s1, System *s2) : FlowImpl(s1, s2) {}
 };
 
-class FluxLog : public FluxImpl {
+class FluxLog : public FlowImpl {
 
 public:
     float execute() override;
 
-    FluxLog() : FluxImpl() {}
+    FluxLog() : FlowImpl() {}
 
-    FluxLog(System *s1, System *s2) : FluxImpl(s1, s2) {}
+    FluxLog(System *s1, System *s2) : FlowImpl(s1, s2) {}
 
-    FluxLog(FluxLog *f) : FluxImpl(f) {}
+    FluxLog(FluxLog *f) : FlowImpl(f) {}
 
 
 

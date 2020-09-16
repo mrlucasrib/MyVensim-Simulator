@@ -2,33 +2,33 @@
 // Created by lucas on 11/09/2020.
 //
 
-#ifndef MYVENSIM_FLUXIMPL_H
-#define MYVENSIM_FLUXIMPL_H
+#ifndef MYVENSIM_FLOWIMPL_H
+#define MYVENSIM_FLOWIMPL_H
 
-#include "flux.h"
+#include "flow.h"
 
-class FluxImpl : public Flux {
+class FlowImpl : public Flow {
 protected:
     System *source;
     System *target;
 public:
     /**
-     * Default Flux's constructor
+     * Default Flow's constructor
      */
-    FluxImpl();
+    FlowImpl();
 
     /**
      * Constructor of copy
-     * @param f FluxImpl
+     * @param f FlowImpl
      */
-    FluxImpl(FluxImpl *f);
+    FlowImpl(FlowImpl *f);
 
     /**
-     * Flux's constructor with some params
+     * Flow's constructor with some params
      * @param from SystemImpl source
      * @param to SystemImpl target
      */
-    FluxImpl(System *from, System *to);
+    FlowImpl(System *from, System *to);
 
     /**
      * Performs the flow
@@ -66,15 +66,15 @@ public:
 
     void setSource(System *);
 
-    ~FluxImpl() override = default;
+    ~FlowImpl() override = default;
 
     /** operator = overload */
-    FluxImpl &operator=(const FluxImpl &);
+    FlowImpl &operator=(const FlowImpl &);
 
     /** operator == overload */
-    bool operator==(const FluxImpl &o);
+    bool operator==(const FlowImpl &o);
 
 };
 
 
-#endif //MYVENSIM_FLUXIMPL_H
+#endif //MYVENSIM_FLOWIMPL_H

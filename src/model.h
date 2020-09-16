@@ -5,7 +5,7 @@
 #ifndef MYVENSIM_MODEL_H
 #define MYVENSIM_MODEL_H
 
-#include "flux.h"
+#include "flow.h"
 #include "system.h"
 class Model {
 
@@ -23,14 +23,14 @@ public:
      * Add a Flow to Model
      * @param f
      */
-    virtual void add(Flux *f) = 0;
+    virtual void add(Flow *f) = 0;
 
 
     /**
      * Remove a flow to Model
      * @param f
      */
-    virtual void remove(Flux *f) = 0;
+    virtual void remove(Flow *f) = 0;
 };
 
 #endif //MYVENSIM_MODEL_H

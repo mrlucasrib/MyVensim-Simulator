@@ -2,46 +2,46 @@
 // Created by lucas on 11/09/2020.
 //
 
-#include "fluxImpl.h"
+#include "flowImpl.h"
 
-FluxImpl::FluxImpl() {
+FlowImpl::FlowImpl() {
     this->source = nullptr;
     this->target = nullptr;
 }
 
-FluxImpl::FluxImpl(System *from, System *to) {
+FlowImpl::FlowImpl(System *from, System *to) {
     this->source = from;
     this->target = to;
 }
 
-System *FluxImpl::getSource() {
+System *FlowImpl::getSource() {
     return this->source;
 }
 
-void FluxImpl::setTarget(System *s) {
+void FlowImpl::setTarget(System *s) {
     this->target = (System*) s;
 }
 
-System *FluxImpl::getTarget() {
+System *FlowImpl::getTarget() {
     return this->target;
 }
 
-void FluxImpl::clearSource() {
+void FlowImpl::clearSource() {
     this->source = nullptr;
 }
 
-void FluxImpl::clearTarget() {
+void FlowImpl::clearTarget() {
     this->target = nullptr;
 }
 
-bool FluxImpl::operator==(const FluxImpl &flux) {
+bool FlowImpl::operator==(const FlowImpl &flux) {
     if (this->target == flux.target && this->source == flux.source)
         return true;
     else
         return true;
 }
 
-FluxImpl& FluxImpl::operator= (const FluxImpl &flux)
+FlowImpl& FlowImpl::operator= (const FlowImpl &flux)
 {
     if(this == &flux)
         return *this;
@@ -52,11 +52,11 @@ FluxImpl& FluxImpl::operator= (const FluxImpl &flux)
     return *this;
 }
 
-FluxImpl::FluxImpl(FluxImpl *f) {
+FlowImpl::FlowImpl(FlowImpl *f) {
     f->setTarget(target);
 
 }
 
-void FluxImpl::setSource(System *s) {
+void FlowImpl::setSource(System *s) {
     source = s;
 }

@@ -2,11 +2,11 @@
 // Created by lucas on 14/09/2020.
 //
 
-#ifndef MYVENSIM_FLUX_H
-#define MYVENSIM_FLUX_H
+#ifndef MYVENSIM_FLOW_H
+#define MYVENSIM_FLOW_H
 
 #include "system.h"
-class Flux {
+class Flow {
 public:
 
     virtual float execute() = 0;
@@ -40,10 +40,10 @@ public:
     virtual void clearSource() = 0;
 
     virtual void setSource(System*) = 0;
-    virtual ~Flux() = default;
+    virtual ~Flow() = default;
 
 //
 //    /** operator == overload */
-//    virtual bool operator==(const Flux &o) = 0;
+//    virtual bool operator==(const Flow &o) = 0;
 };
-#endif //MYVENSIM_FLUX_H
+#endif //MYVENSIM_FLOW_H

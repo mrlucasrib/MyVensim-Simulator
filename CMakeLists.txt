@@ -8,9 +8,9 @@ include_directories(src)
 #include_directories(test/unit_tests)
 
 add_executable(MyVensim
-        src/flux.h
-        src/fluxImpl.cpp
-        src/fluxImpl.h
+        src/flow.h
+        src/flowImpl.cpp
+        src/flowImpl.h
         src/model.h
         src/modelImpl.cpp
         src/modelImpl.h

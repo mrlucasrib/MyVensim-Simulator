@@ -37,16 +37,16 @@ public:
      */
     void execute(int start, int end);
 
-    void remove(Flux*);
+    void remove(Flow*);
     /**
      * Add a Flow to ModelImpl
      * @param f
      */
-    void add(Flux *f);
+    void add(Flow *f);
     /**
      * Flow vector
      */
-    std::vector<Flux *> flux_vector;
+    std::vector<Flow *> flux_vector;
 };
 
 
