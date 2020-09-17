@@ -10,7 +10,12 @@
 class SystemImpl : public System {
 protected:
     float value;
+    const char* name;
 public:
+    const char *getName() const;
+
+    void setName(const char *name);
+
     /**
      * Default SystemImpl's constructor
      */

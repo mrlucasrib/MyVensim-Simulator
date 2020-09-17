@@ -11,6 +11,7 @@ class FlowImpl : public Flow {
 protected:
     System *source;
     System *target;
+    const char *name;
 public:
     /**
      * Default Flow's constructor
@@ -21,58 +22,68 @@ public:
      * Constructor of copy
      * @param f FlowImpl
      */
-    FlowImpl(FlowImpl *f);
+    explicit FlowImpl(FlowImpl *f);
 
     /**
      * Flow's constructor with some params
-     * @param from SystemImpl source
-     * @param to SystemImpl target
+     * @param from System's source
+     * @param to System's target
      */
     FlowImpl(System *from, System *to);
 
-    /**
-     * Performs the flow
-     * @return Return the result of the formula
-     */
-    virtual float execute() = 0;
 
     /**
      * Set SystemImpl's target
      * @param s System
      */
-    void setTarget(System *s);
+    void setTarget(System *s) override;
 
     /**
      * Get SystemImpl target
      * @return
      */
-    System *getTarget();
+    System *getTarget() override;
 
     /**
      * Get SystemImpl's source
      * @return
      */
-    System *getSource();
+    System *getSource() override;
 
     /**
      * Clear SystemImpl's taget
      */
-    void clearTarget();
+    void clearTarget() override;
 
     /**
      * Clear SystemImpl's source
      */
     void clearSource() override;
 
-    void setSource(System *);
+    /**
+     * Set System's source
+     */
+    void setSource(System *) override;
 
     ~FlowImpl() override = default;
 
     /** operator = overload */
-    FlowImpl &operator=(const FlowImpl &);
+    FlowImpl &operator=(FlowImpl &);
 
     /** operator == overload */
-    bool operator==(const FlowImpl &o);
+    bool operator==(FlowImpl &);
+
+    /**
+     * Set Flow's name
+     * @param n Flow name
+     */
+    void setName(const char *n) override;
+
+    /**
+     * Get Flow's name
+     * @return
+     */
+    const char *getName() const override;
 
 };
 

@@ -19,12 +19,12 @@ void runTests::Run() {
     flux_test::setTarget();
     flux_test::clearSource();
     flux_test::clearTarget();
-//    flux_test::comparisonTest();
+    flux_test::comparisonTest();
     flux_test::copyTest();
 
     model_test::addTest();
     model_test::removeTest();
-//    model_test::comparisonTest();
+    model_test::comparisonTest();
     model_test::copyTest();
 
     system_test::SystemImplTest();

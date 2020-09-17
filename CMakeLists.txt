@@ -25,8 +25,8 @@ add_executable(MyVensim
         test/unit_tests/model_test.h
         test/unit_tests/system_test.cpp
         test/unit_tests/system_test.h
-        test/flux_concret.cpp
-        test/flux_concret.h
+        test/flow_concret.cpp
+        test/flow_concret.h
         test/runTests.cpp
         test/runTests.h
         )

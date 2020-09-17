@@ -21,6 +21,9 @@ public:
      */
     virtual float getValue() = 0;
 
+    virtual const char *getName() const = 0;
+
+    virtual void setName(const char *name) = 0;
     virtual ~System() = default;
 };
 #endif //MYVENSIM_SYSTEM_H

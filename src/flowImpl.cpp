@@ -19,7 +19,7 @@ System *FlowImpl::getSource() {
 }
 
 void FlowImpl::setTarget(System *s) {
-    this->target = (System*) s;
+    this->target = (System *) s;
 }
 
 System *FlowImpl::getTarget() {
@@ -34,21 +34,13 @@ void FlowImpl::clearTarget() {
     this->target = nullptr;
 }
 
-bool FlowImpl::operator==(const FlowImpl &flux) {
-    if (this->target == flux.target && this->source == flux.source)
-        return true;
-    else
-        return true;
-}
 
-FlowImpl& FlowImpl::operator= (const FlowImpl &flux)
-{
-    if(this == &flux)
+FlowImpl &FlowImpl::operator=(FlowImpl &f) {
+    if (this == &f)
         return *this;
-
-    this->source = flux.source;
-    this->target = flux.target;
-
+    this->setName(f.getName());
+    this->setSource(f.getSource());
+    this->setTarget(f.getTarget());
     return *this;
 }
 
@@ -59,4 +51,19 @@ FlowImpl::FlowImpl(FlowImpl *f) {
 
 void FlowImpl::setSource(System *s) {
     source = s;
+}
+
+void FlowImpl::setName(const char *n) {
+    this->name = n;
+}
+
+const char *FlowImpl::getName() const {
+    return this->name;
+}
+
+bool FlowImpl::operator==(FlowImpl &f) {
+    if (this->target == f.target && this->source == f.source && this->name == f.getName())
+        return true;
+    else
+        return false;
 }

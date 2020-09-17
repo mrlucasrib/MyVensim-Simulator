@@ -4,7 +4,7 @@
 
 #include "funcional_test.h"
 #include "modelImpl.h"
-#include "../flux_concret.h"
+#include "../flow_concret.h"
 #include <cassert>
 #include <cmath>
 #include <systemImpl.h>
@@ -13,7 +13,7 @@ void funcional_test::exponentialTest() {
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *m = new ModelImpl();
-    auto *f = new FluxExp(s1, s2);
+    auto *f = new FlowExp(s1, s2);
     m->add(f);
     s1->setValue(100);
     s2->setValue(0);
@@ -28,7 +28,7 @@ void funcional_test::LogTest() {
     auto *s1 = new SystemImpl();
     auto *s2 = new SystemImpl();
     auto *m = new ModelImpl();
-    auto *f = new FluxLog(s1, s2);
+    auto *f = new FlowLog(s1, s2);
     m->add(f);
     s1->setValue(100);
     s2->setValue(10);
@@ -45,12 +45,12 @@ void funcional_test::ultimateTest() {
     auto *q3 = new SystemImpl(100);
     auto *q4 = new SystemImpl(0.0);
     auto *q5 = new SystemImpl(0.0);
-    auto *f1 = new FluxExp(q4, q1);
-    auto *f2 = new FluxExp(q1, q2);
-    auto *f3 = new FluxExp(q1, q3);
-    auto *f4 = new FluxExp(q2, q3);
-    auto *f5 = new FluxExp(q3, q4);
-    auto *f6 = new FluxExp(q2, q5);
+    auto *f1 = new FlowExp(q4, q1);
+    auto *f2 = new FlowExp(q1, q2);
+    auto *f3 = new FlowExp(q1, q3);
+    auto *f4 = new FlowExp(q2, q3);
+    auto *f5 = new FlowExp(q3, q4);
+    auto *f6 = new FlowExp(q2, q5);
 
 
     modelo->add(f1);

@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "model.h"
+
 class ModelImpl : public Model {
 private:
     /**
@@ -14,10 +15,15 @@ private:
      */
     double time;
 
-    ModelImpl &operator=(const ModelImpl &);
+    ModelImpl &operator=(ModelImpl &);
 
     /** operator == overload */
-    bool operator==(const ModelImpl &);
+    bool operator==(ModelImpl &);
+
+    std::vector<Flow *> flowContainer;
+    std::vector<System *> systemContainer;
+    const char *name;
+
 
 public:
     /**
@@ -35,18 +41,25 @@ public:
      * @param start
      * @param end
      */
-    void execute(int start, int end);
+    void execute(int start, int end) override;
 
-    void remove(Flow*);
+    void remove(Flow *) override;
+
     /**
      * Add a Flow to ModelImpl
      * @param f
      */
-    void add(Flow *f);
+    void add(Flow *f) override;
+
+    const char *getName() const override;
+
+    void setName(const char *name) override;
+
     /**
      * Flow vector
      */
-    std::vector<Flow *> flux_vector;
+    typedef std::vector<System *>::iterator systemIterator;
+    typedef std::vector<Flow *>::iterator flowIterator;
 };
 
 

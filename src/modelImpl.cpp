@@ -5,22 +5,22 @@
 #include "modelImpl.h"
 
 ModelImpl::ModelImpl(ModelImpl *model) {
-    this->flux_vector = model->flux_vector;
+    this->flowContainer = model->flowContainer;
 }
 
 ModelImpl::ModelImpl() {
-    this->flux_vector.clear();
+    this->flowContainer.clear();
 }
 
 void ModelImpl::add(Flow *f) {
-    this->flux_vector.push_back(f);
+    this->flowContainer.push_back(f);
 }
 
 
 void ModelImpl::remove(Flow *f) {
-    for (int i = 0; i < this->flux_vector.size(); ++i) {
-        if (this->flux_vector[i] == f) {
-            this->flux_vector.erase(this->flux_vector.begin() + i);
+    for (int i = 0; i < this->flowContainer.size(); ++i) {
+        if (this->flowContainer[i] == f) {
+            this->flowContainer.erase(this->flowContainer.begin() + i);
         }
     }
 }
@@ -32,13 +32,13 @@ void ModelImpl::execute(int start, int end) {
 
     for(int time = start; time < end; time++){
 
-        for(auto flow : this->flux_vector){
+        for(auto flow : this->flowContainer){
 
             v.push_back(flow->execute());
         }
 
         vIt = v.begin();
-        for(auto flow : this->flux_vector){
+        for(auto flow : this->flowContainer){
 
             auto* sourceSystem = flow->getSource();
 
@@ -58,12 +58,24 @@ void ModelImpl::execute(int start, int end) {
     }
 }
 
-bool ModelImpl::operator==(const ModelImpl &model) {
+ModelImpl &ModelImpl::operator=(ModelImpl &m) {
+    throw "Copy not allowed";
+}
+
+bool ModelImpl::operator==(ModelImpl &model) {
     if(this == &model)
         return true;
-    if(this->flux_vector.size() != model.flux_vector.size())
+    if(this->flowContainer.size() != model.flowContainer.size())
         return false;
 
     return true;
+}
+
+const char *ModelImpl::getName() const {
+    return name;
+}
+
+void ModelImpl::setName(const char *name) {
+    ModelImpl::name = name;
 }
 

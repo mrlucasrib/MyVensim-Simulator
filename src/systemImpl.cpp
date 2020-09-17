@@ -15,6 +15,7 @@ SystemImpl::SystemImpl(SystemImpl *system) {
 
 SystemImpl::SystemImpl() {
     this->value = 0;
+
 }
 
 float SystemImpl::getValue() {
@@ -30,5 +31,21 @@ bool SystemImpl::operator==(const SystemImpl &sys) {
         return true;
     else
         return false;
+}
+
+const char *SystemImpl::getName() const {
+    return name;
+}
+
+void SystemImpl::setName(const char *name) {
+    SystemImpl::name = name;
+}
+
+SystemImpl &SystemImpl::operator=(const SystemImpl &s) {
+    if(this == &s)
+        return *this;
+    this->setName(s.getName());
+    this->setValue(s.value);
+    return *this;
 }
 
