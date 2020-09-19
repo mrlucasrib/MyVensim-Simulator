@@ -3,7 +3,6 @@
 //
 
 #include "runTests.h"
-#include "functional_tests/funcional_test.h"
 #include "unit_tests/flux_test.h"
 #include "unit_tests/model_test.h"
 #include "unit_tests/system_test.h"
@@ -11,9 +10,7 @@
 
 
 void runTests::Run() {
-    funcional_test::exponentialTest();
-    funcional_test::LogTest();
-    funcional_test::ultimateTest();
+
 
     flux_test::getSource();
     flux_test::setSource();

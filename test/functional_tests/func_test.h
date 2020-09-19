@@ -6,7 +6,7 @@
 #define MYVENSIM_FUNC_TEST_H
 
 #include "../src/model.h"
-#include "../flow_concret.h"
+#include "../flux_concret.h"
 #include <cassert>
 #include <cmath>
 void exponentialTest();

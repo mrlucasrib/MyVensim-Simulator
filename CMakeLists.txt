@@ -20,16 +20,14 @@ add_library(MyVensimLib SHARED
 
 
 add_executable(MyVensim
-        test/functional_tests/funcional_test.cpp
-        test/functional_tests/funcional_test.h
         test/unit_tests/flux_test.cpp
         test/unit_tests/flux_test.h
         test/unit_tests/model_test.cpp
         test/unit_tests/model_test.h
         test/unit_tests/system_test.cpp
         test/unit_tests/system_test.h
-        test/flow_concret.cpp
-        test/flow_concret.h
+        test/flux_concret.cpp
+        test/flux_concret.h
         test/runTests.cpp
         test/runTests.h
         test/functional_tests/func_test.cpp test/functional_tests/func_test.h)

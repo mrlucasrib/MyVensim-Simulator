@@ -3,7 +3,7 @@
 //
 
 #include "flux_test.h"
-#include "../flow_concret.h"
+#include "../flux_concret.h"
 #include <cassert>
 #include <systemImpl.h>
 

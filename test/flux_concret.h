@@ -2,8 +2,8 @@
 // Created by lucas on 15/09/2020.
 //
 
-#ifndef MYVENSIM_FLOW_CONCRET_H
-#define MYVENSIM_FLOW_CONCRET_H
+#ifndef MYVENSIM_FLUX_CONCRET_H
+#define MYVENSIM_FLUX_CONCRET_H
 #include "../src/flowImpl.h"
 
 
@@ -37,4 +37,4 @@ public:
 
 
 
-#endif //MYVENSIM_FLOW_CONCRET_H
+#endif //MYVENSIM_FLUX_CONCRET_H
