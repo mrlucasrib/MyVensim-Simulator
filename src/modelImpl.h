@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "model.h"
-
+#include "flowImpl.h"
 class ModelImpl : public Model {
 private:
     /**
@@ -22,7 +22,7 @@ private:
 
     std::vector<Flow *> flowContainer;
     std::vector<System *> systemContainer;
-    const char *name;
+    std::string name;
 
 
 public:
@@ -51,9 +51,23 @@ public:
      */
     void add(Flow *f) override;
 
-    const char *getName() const override;
+    std::string getName() const override;
 
-    void setName(const char *name) override;
+    void setName(std::string n) override;
+
+    System *createSystem(const std::string &) override;
+
+    static Model *createModel();
+
+    bool exists(const std::string &, Type) override;
+
+    Flow *findFlow(const std::string &) override;
+
+    System *findSystem(const std::string &) override;
+
+    System *createSystem(const std::string &, double v) override;
+
+    void add(System *s) override;
 
     /**
      * Flow vector

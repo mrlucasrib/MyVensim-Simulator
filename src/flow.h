@@ -13,7 +13,7 @@ public:
     * Performs the flow
     * @return Return the result of the formula
     */
-    virtual float execute() = 0;
+    virtual double execute() = 0;
 
     /**
      * Set System's target
@@ -54,13 +54,13 @@ public:
      * Get name of the System
      * @return System's name
      */
-    virtual const char *getName() const = 0;
+    virtual std::string getName() const = 0;
 
     /**
      * Set name of the System
      * @param name System's name
      */
-    virtual void setName(const char *name) = 0;
+    virtual void setName(std::string name) = 0;
 };
 
 #endif //MYVENSIM_FLOW_H

@@ -7,6 +7,8 @@
 #include "unit_tests/flux_test.h"
 #include "unit_tests/model_test.h"
 #include "unit_tests/system_test.h"
+#include "functional_tests/func_test.h"
+
 
 void runTests::Run() {
     funcional_test::exponentialTest();
@@ -35,5 +37,8 @@ void runTests::Run() {
 
 int main() {
     runTests::Run();
+    exponentialTest();
+    LogTest();
+    ultimateTest();
     return 0;
 }

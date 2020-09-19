@@ -7,7 +7,7 @@
 #include <cassert>
 
 void system_test::SystemImplTest() {
-    float v = 5;
+    double v = 5;
     auto *sys = new SystemImpl(v);
     assert(sys->getValue() == v);
 }
@@ -18,7 +18,7 @@ void system_test::getValueTest() {
 }
 
 void system_test::setValueTest() {
-    float v = 5;
+    double v = 5;
     auto *sys = new SystemImpl();
     sys->setValue(v);
     assert(sys->getValue() == v);

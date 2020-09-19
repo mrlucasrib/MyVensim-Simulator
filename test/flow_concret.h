@@ -9,7 +9,7 @@
 
 class FlowExp : public FlowImpl {
 
-    float execute() override;
+    double execute() override;
 
 public:
     FlowExp(FlowExp *f) : FlowImpl(f) {}
@@ -23,7 +23,7 @@ public:
 class FlowLog : public FlowImpl {
 
 public:
-    float execute() override;
+    double execute() override;
 
     FlowLog() : FlowImpl() {}
 

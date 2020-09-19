@@ -4,6 +4,7 @@
 
 #ifndef MYVENSIM_SYSTEM_H
 #define MYVENSIM_SYSTEM_H
+#include <string>
 
 
 class System {
@@ -13,17 +14,17 @@ public:
      * Set a value
      * @param value
      */
-    virtual void setValue(float) = 0;
+    virtual void setValue(double) = 0;
 
     /**
      * Get a value
      * @return
      */
-    virtual float getValue() = 0;
+    virtual double getValue() = 0;
 
-    virtual const char *getName() const = 0;
+    virtual std::string getName() const = 0;
 
-    virtual void setName(const char *name) = 0;
+    virtual void setName(std::string name) = 0;
     virtual ~System() = default;
 };
 #endif //MYVENSIM_SYSTEM_H

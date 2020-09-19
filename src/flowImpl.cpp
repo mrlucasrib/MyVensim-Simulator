@@ -53,11 +53,11 @@ void FlowImpl::setSource(System *s) {
     source = s;
 }
 
-void FlowImpl::setName(const char *n) {
+void FlowImpl::setName(std::string n) {
     this->name = n;
 }
 
-const char *FlowImpl::getName() const {
+std::string FlowImpl::getName() const {
     return this->name;
 }
 

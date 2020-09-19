@@ -17,7 +17,7 @@ void funcional_test::exponentialTest() {
     m->add(f);
     s1->setValue(100);
     s2->setValue(0);
-
+    m->exists("ss", Type::System);
     m->execute(0, 100);
 
     assert(fabs(s1->getValue() - 36.6032) < 0.0001);

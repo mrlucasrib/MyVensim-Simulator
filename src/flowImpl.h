@@ -11,7 +11,7 @@ class FlowImpl : public Flow {
 protected:
     System *source;
     System *target;
-    const char *name;
+    std::string name;
 public:
     /**
      * Default Flow's constructor
@@ -77,13 +77,13 @@ public:
      * Set Flow's name
      * @param n Flow name
      */
-    void setName(const char *n) override;
+    void setName(std::string n) override;
 
     /**
      * Get Flow's name
      * @return
      */
-    const char *getName() const override;
+    std::string getName() const override;
 
 };
 

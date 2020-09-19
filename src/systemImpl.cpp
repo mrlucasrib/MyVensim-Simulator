@@ -5,7 +5,7 @@
 #include "systemImpl.h"
 
 
-SystemImpl::SystemImpl(float v) {
+SystemImpl::SystemImpl(double v) {
     this->value = v;
 }
 
@@ -18,11 +18,11 @@ SystemImpl::SystemImpl() {
 
 }
 
-float SystemImpl::getValue() {
+double SystemImpl::getValue() {
     return this->value;
 }
 
-void SystemImpl::setValue(float v) {
+void SystemImpl::setValue(double v) {
     this->value = v;
 }
 
@@ -33,11 +33,11 @@ bool SystemImpl::operator==(const SystemImpl &sys) {
         return false;
 }
 
-const char *SystemImpl::getName() const {
+std::string SystemImpl::getName() const {
     return name;
 }
 
-void SystemImpl::setName(const char *name) {
+void SystemImpl::setName(std::string name) {
     SystemImpl::name = name;
 }
 

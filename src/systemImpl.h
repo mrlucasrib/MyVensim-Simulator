@@ -9,12 +9,12 @@
 
 class SystemImpl : public System {
 protected:
-    float value;
-    const char* name;
+    double value;
+    std::string name;
 public:
-    const char *getName() const;
+    std::string getName() const;
 
-    void setName(const char *name);
+    void setName(std::string name);
 
     /**
      * Default SystemImpl's constructor
@@ -24,7 +24,7 @@ public:
     /**
      * SystemImpl's constructor with a initial value
      */
-    explicit SystemImpl(float);
+    explicit SystemImpl(double);
 
     /**
      * Constructor of copy
@@ -36,13 +36,13 @@ public:
      * Set a value
      * @param value
      */
-    void setValue(float) override;
+    void setValue(double) override;
 
     /**
      * Get a value
      * @return
      */
-    float getValue() override;
+    double getValue() override;
 
     ~SystemImpl() override = default;
 
