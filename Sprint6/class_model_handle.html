@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Referência da Classe ModelHandle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pub-static-methods">Membros Públicos Estáticos</a> &#124;
+<a href="#pri-methods">Membros Privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="class_model_handle-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe ModelHandle</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia para ModelHandle:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle__inherit__graph.png" border="0" usemap="#_model_handle_inherit__map" alt="Inheritance graph"/></div>
+<map name="_model_handle_inherit__map" id="_model_handle_inherit__map">
+<area shape="rect" title=" " alt="" coords="151,580,295,921"/>
+<area shape="rect" href="class_handle.html" title=" " alt="" coords="5,299,176,421"/>
+<area shape="rect" href="class_handle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="34,5,147,127"/>
+<area shape="rect" href="class_model.html" title=" " alt="" coords="200,189,333,531"/>
+</map>
+</div>
+<div class="dynheader">
+Diagrama de colaboração para ModelHandle:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle__coll__graph.png" border="0" usemap="#_model_handle_coll__map" alt="Collaboration graph"/></div>
+<map name="_model_handle_coll__map" id="_model_handle_coll__map">
+<area shape="rect" title=" " alt="" coords="213,1015,357,1356"/>
+<area shape="rect" href="class_handle.html" title=" " alt="" coords="67,734,238,855"/>
+<area shape="rect" href="class_model_body.html" title=" " alt="" coords="5,220,148,561"/>
+<area shape="rect" href="class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="23,5,130,171"/>
+<area shape="rect" href="class_handle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="172,330,285,451"/>
+<area shape="rect" href="class_model.html" title=" " alt="" coords="262,624,395,965"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a1c203c425e69e245ad1e3f65143fa69b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a1c203c425e69e245ad1e3f65143fa69b">ModelHandle</a> ()</td></tr>
+<tr class="separator:a1c203c425e69e245ad1e3f65143fa69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d53c321a0680a723794d0b61d87e36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#ac6d53c321a0680a723794d0b61d87e36">~ModelHandle</a> () override</td></tr>
+<tr class="separator:ac6d53c321a0680a723794d0b61d87e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26241c1c6e14d0f6727fc9b43d571354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a26241c1c6e14d0f6727fc9b43d571354">execute</a> (int start, int end) override</td></tr>
+<tr class="separator:a26241c1c6e14d0f6727fc9b43d571354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd874f405f4a3435ea6234bd2d2da15c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#abd874f405f4a3435ea6234bd2d2da15c">remove</a> (<a class="el" href="class_flow.html">Flow</a> *f) override</td></tr>
+<tr class="separator:abd874f405f4a3435ea6234bd2d2da15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c2e64955c7d0f2515a310155252962"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a46c2e64955c7d0f2515a310155252962">getName</a> () const override</td></tr>
+<tr class="separator:a46c2e64955c7d0f2515a310155252962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4687cde85c642c0ead99d8a07ecef4c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a4687cde85c642c0ead99d8a07ecef4c2">setName</a> (std::string n) override</td></tr>
+<tr class="separator:a4687cde85c642c0ead99d8a07ecef4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b7f6e5b06c9b0289a8d815f8695856"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#ae2b7f6e5b06c9b0289a8d815f8695856">createSystem</a> (const std::string &amp;s) override</td></tr>
+<tr class="separator:ae2b7f6e5b06c9b0289a8d815f8695856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7108120e5b0f7c81e470505c3479cb3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a7108120e5b0f7c81e470505c3479cb3f">exists</a> (const std::string &amp;n, <a class="el" href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> t) override</td></tr>
+<tr class="separator:a7108120e5b0f7c81e470505c3479cb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e9e72f6e34f06981bf7c2aa6cae87f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a1e9e72f6e34f06981bf7c2aa6cae87f3">findFlow</a> (const std::string &amp;n) override</td></tr>
+<tr class="separator:a1e9e72f6e34f06981bf7c2aa6cae87f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64636fbedd128494cdfe580868bd245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#af64636fbedd128494cdfe580868bd245">findSystem</a> (const std::string &amp;n) override</td></tr>
+<tr class="separator:af64636fbedd128494cdfe580868bd245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cb7784c55ba33ed16084a49e24d697"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#ab6cb7784c55ba33ed16084a49e24d697">createSystem</a> (const std::string &amp;n, double v) override</td></tr>
+<tr class="separator:ab6cb7784c55ba33ed16084a49e24d697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_handle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_handle')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_handle.html">Handle&lt; ModelBody &gt;</a></td></tr>
+<tr class="memitem:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Handle</a> ()</td></tr>
+<tr class="memdesc:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">Mais...</a><br /></td></tr>
+<tr class="separator:a6a72028918adf79c0ff8d9996e5e4107 inherit pub_methods_class_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af304e7014a2e600e235140d246783f85 inherit pub_methods_class_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#af304e7014a2e600e235140d246783f85">Handle</a> (const <a class="el" href="class_handle.html">Handle</a> &amp;hd)</td></tr>
+<tr class="memdesc:af304e7014a2e600e235140d246783f85 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="class_handle.html#af304e7014a2e600e235140d246783f85">Mais...</a><br /></td></tr>
+<tr class="separator:af304e7014a2e600e235140d246783f85 inherit pub_methods_class_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#addd59fdf43baa517a06d44e1125b5ab1">~Handle</a> ()</td></tr>
+<tr class="memdesc:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="class_handle.html#addd59fdf43baa517a06d44e1125b5ab1">Mais...</a><br /></td></tr>
+<tr class="separator:addd59fdf43baa517a06d44e1125b5ab1 inherit pub_methods_class_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_class_handle"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_handle.html">Handle</a>&lt; <a class="el" href="class_model_body.html">ModelBody</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a06418155d929707d0a95e27efb8f3b82">operator=</a> (const <a class="el" href="class_handle.html">Handle</a> &amp;hd)</td></tr>
+<tr class="memdesc:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator  <a href="class_handle.html#a06418155d929707d0a95e27efb8f3b82">Mais...</a><br /></td></tr>
+<tr class="separator:a06418155d929707d0a95e27efb8f3b82 inherit pub_methods_class_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:ae3b375de5f6df4faf74a95d64748e048 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ae3b375de5f6df4faf74a95d64748e048">Model</a> ()</td></tr>
+<tr class="separator:ae3b375de5f6df4faf74a95d64748e048 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc11aa4cb3c58331b262150382e7d1c inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a6bc11aa4cb3c58331b262150382e7d1c">Model</a> (<a class="el" href="class_model.html">Model</a> *)</td></tr>
+<tr class="separator:a6bc11aa4cb3c58331b262150382e7d1c inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70be574c6355fd45038f10b02dbce4c6 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a70be574c6355fd45038f10b02dbce4c6">execute</a> (int start, int end)</td></tr>
+<tr class="separator:a70be574c6355fd45038f10b02dbce4c6 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054350312f72e04ef46fe5b14f987735 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a054350312f72e04ef46fe5b14f987735">add</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
+<tr class="separator:a054350312f72e04ef46fe5b14f987735 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd7230f2fc199f75219e656c0690ac3 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#afdd7230f2fc199f75219e656c0690ac3">add</a> (<a class="el" href="class_flux.html">Flux</a> *f)</td></tr>
+<tr class="separator:afdd7230f2fc199f75219e656c0690ac3 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f28ba97fb919a75da13432bb3872fa inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#af3f28ba97fb919a75da13432bb3872fa">remove</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
+<tr class="separator:af3f28ba97fb919a75da13432bb3872fa inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06aaf107957095841397c1d3c9cf3e55 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a06aaf107957095841397c1d3c9cf3e55">remove</a> (<a class="el" href="class_flux.html">Flux</a> *f)</td></tr>
+<tr class="separator:a06aaf107957095841397c1d3c9cf3e55 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad5d5029ee337343b39a724167b21cb inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a1ad5d5029ee337343b39a724167b21cb">setName</a> (const char *name)=0</td></tr>
+<tr class="separator:a1ad5d5029ee337343b39a724167b21cb inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#ab24287f17f6abb3853ef92cf508a6629">createFlow</a> (std::string id, <a class="el" href="class_system.html">System</a> *s, <a class="el" href="class_system.html">System</a> *t)</td></tr>
+<tr class="separator:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a93a5cd7355277eb889e1e78a08346ecc">createFlow</a> (std::string id)</td></tr>
+<tr class="separator:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#ab24287f17f6abb3853ef92cf508a6629">createFlow</a> (std::string id, <a class="el" href="class_system.html">System</a> *s, <a class="el" href="class_system.html">System</a> *t)</td></tr>
+<tr class="separator:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a93a5cd7355277eb889e1e78a08346ecc">createFlow</a> (std::string id)</td></tr>
+<tr class="separator:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros Públicos Estáticos</h2></td></tr>
+<tr class="memitem:ab0a9d02319a5dc10e5f31a5ebaa2f891"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#ab0a9d02319a5dc10e5f31a5ebaa2f891">createModel</a> ()</td></tr>
+<tr class="separator:ab0a9d02319a5dc10e5f31a5ebaa2f891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Membros Públicos Estáticos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
+<tr class="separator:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad8bed79d4c63d8621640da27b8516a inherit pub_static_methods_class_model"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a0ad8bed79d4c63d8621640da27b8516a">createModel</a> ()</td></tr>
+<tr class="separator:a0ad8bed79d4c63d8621640da27b8516a inherit pub_static_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Membros Privados</h2></td></tr>
+<tr class="memitem:add16937d3a2e448d078d13307369d343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model_handle.html">ModelHandle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#add16937d3a2e448d078d13307369d343">operator=</a> (<a class="el" href="class_model_handle.html">ModelHandle</a> &amp;)</td></tr>
+<tr class="separator:add16937d3a2e448d078d13307369d343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e37991acbd4d27bf7afa7437b5e3473"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a2e37991acbd4d27bf7afa7437b5e3473">operator==</a> (<a class="el" href="class_model_handle.html">ModelHandle</a> &amp;)</td></tr>
+<tr class="separator:a2e37991acbd4d27bf7afa7437b5e3473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2933227c778ebac15ec01ba83355b39a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a2933227c778ebac15ec01ba83355b39a">add</a> (<a class="el" href="class_flow.html">Flow</a> *f) override</td></tr>
+<tr class="separator:a2933227c778ebac15ec01ba83355b39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be4061afed9ea571e49e25c3e0e5f3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a8be4061afed9ea571e49e25c3e0e5f3d">add</a> (<a class="el" href="class_system.html">System</a> *s) override</td></tr>
+<tr class="separator:a8be4061afed9ea571e49e25c3e0e5f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a1818998a78b1dd04e344c134f364c76b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a1818998a78b1dd04e344c134f364c76b">time</a></td></tr>
+<tr class="separator:a1818998a78b1dd04e344c134f364c76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b34a30f953f7c13c260b338eb6139f3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a0b34a30f953f7c13c260b338eb6139f3">flowContainer</a></td></tr>
+<tr class="separator:a0b34a30f953f7c13c260b338eb6139f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04f0e3106d7e1e27b7f109ea5f22925"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#af04f0e3106d7e1e27b7f109ea5f22925">systemContainer</a></td></tr>
+<tr class="separator:af04f0e3106d7e1e27b7f109ea5f22925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712914806bf215e201d55ec1b311470b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_handle.html#a712914806bf215e201d55ec1b311470b">name</a></td></tr>
+<tr class="separator:a712914806bf215e201d55ec1b311470b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Outros membros herdados</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_handle"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_handle')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_handle.html">Handle&lt; ModelBody &gt;</a></td></tr>
+<tr class="memitem:a16021e57596d7369dfa1a9fadc35c06f inherit pro_attribs_class_handle"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model_body.html">ModelBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a></td></tr>
+<tr class="memdesc:a16021e57596d7369dfa1a9fadc35c06f inherit pro_attribs_class_handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">referência para a implementação  <a href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">Mais...</a><br /></td></tr>
+<tr class="separator:a16021e57596d7369dfa1a9fadc35c06f inherit pro_attribs_class_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_model"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_model')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:aec8133222ae2dc3eb2cc39cb03aa0edf inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flux.html">Flux</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aec8133222ae2dc3eb2cc39cb03aa0edf">flux_vector</a></td></tr>
+<tr class="separator:aec8133222ae2dc3eb2cc39cb03aa0edf inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadeef5ef7a6e2d9d6b9c3d9a86719207 inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aadeef5ef7a6e2d9d6b9c3d9a86719207">system_vector</a></td></tr>
+<tr class="separator:aadeef5ef7a6e2d9d6b9c3d9a86719207 inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock">
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00079">79</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+</div><h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a1c203c425e69e245ad1e3f65143fa69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c203c425e69e245ad1e3f65143fa69b">&#9670;&nbsp;</a></span>ModelHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelHandle::ModelHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default <a class="el" href="class_model_handle.html">ModelHandle</a>'s constructor </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00105">105</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a1c203c425e69e245ad1e3f65143fa69b_icgraph.png" border="0" usemap="#class_model_handle_a1c203c425e69e245ad1e3f65143fa69b_icgraph" alt=""/></div>
+<map name="class_model_handle_a1c203c425e69e245ad1e3f65143fa69b_icgraph" id="class_model_handle_a1c203c425e69e245ad1e3f65143fa69b_icgraph">
+<area shape="rect" title=" " alt="" coords="251,5,453,32"/>
+<area shape="rect" href="class_model_handle.html#ab0a9d02319a5dc10e5f31a5ebaa2f891" title=" " alt="" coords="5,5,203,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac6d53c321a0680a723794d0b61d87e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d53c321a0680a723794d0b61d87e36">&#9670;&nbsp;</a></span>~ModelHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelHandle::~ModelHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00107">107</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções membros</h2>
+<a id="a2933227c778ebac15ec01ba83355b39a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2933227c778ebac15ec01ba83355b39a">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelHandle::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_flow.html">Flow</a> vector </p>
+
+<p>Implementa <a class="el" href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00170">170</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a2933227c778ebac15ec01ba83355b39a_cgraph.png" border="0" usemap="#class_model_handle_a2933227c778ebac15ec01ba83355b39a_cgraph" alt=""/></div>
+<map name="class_model_handle_a2933227c778ebac15ec01ba83355b39a_cgraph" id="class_model_handle_a2933227c778ebac15ec01ba83355b39a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" href="class_model_body.html#ad43381fc79a27744353193d04b983c1f" title=" " alt="" coords="193,5,320,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8be4061afed9ea571e49e25c3e0e5f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be4061afed9ea571e49e25c3e0e5f3d">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelHandle::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00174">174</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d_cgraph.png" border="0" usemap="#class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d_cgraph" alt=""/></div>
+<map name="class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d_cgraph" id="class_model_handle_a8be4061afed9ea571e49e25c3e0e5f3d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,145,32"/>
+<area shape="rect" href="class_model_body.html#ad43381fc79a27744353193d04b983c1f" title=" " alt="" coords="193,5,320,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0a9d02319a5dc10e5f31a5ebaa2f891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a9d02319a5dc10e5f31a5ebaa2f891">&#9670;&nbsp;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_model.html">Model</a>* ModelHandle::createModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00097">97</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_ab0a9d02319a5dc10e5f31a5ebaa2f891_cgraph.png" border="0" usemap="#class_model_handle_ab0a9d02319a5dc10e5f31a5ebaa2f891_cgraph" alt=""/></div>
+<map name="class_model_handle_ab0a9d02319a5dc10e5f31a5ebaa2f891_cgraph" id="class_model_handle_ab0a9d02319a5dc10e5f31a5ebaa2f891_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,203,32"/>
+<area shape="rect" href="class_model_handle.html#a1c203c425e69e245ad1e3f65143fa69b" title=" " alt="" coords="251,5,453,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6cb7784c55ba33ed16084a49e24d697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cb7784c55ba33ed16084a49e24d697">&#9670;&nbsp;</a></span>createSystem() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a>* ModelHandle::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a567a41790a2ffd1799b7b5cd2f298a90">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00162">162</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_ab6cb7784c55ba33ed16084a49e24d697_cgraph.png" border="0" usemap="#class_model_handle_ab6cb7784c55ba33ed16084a49e24d697_cgraph" alt=""/></div>
+<map name="class_model_handle_ab6cb7784c55ba33ed16084a49e24d697_cgraph" id="class_model_handle_ab6cb7784c55ba33ed16084a49e24d697_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,32"/>
+<area shape="rect" href="class_model_body.html#a6532a20c7f2afac4f5a67376348243f6" title=" " alt="" coords="260,5,452,32"/>
+<area shape="rect" href="class_model_body.html#ad43381fc79a27744353193d04b983c1f" title=" " alt="" coords="500,5,627,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2b7f6e5b06c9b0289a8d815f8695856"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b7f6e5b06c9b0289a8d815f8695856">&#9670;&nbsp;</a></span>createSystem() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a>* ModelHandle::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#af93ee2428cac67237763e7f250fd5ecc">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00145">145</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_ae2b7f6e5b06c9b0289a8d815f8695856_cgraph.png" border="0" usemap="#class_model_handle_ae2b7f6e5b06c9b0289a8d815f8695856_cgraph" alt=""/></div>
+<map name="class_model_handle_ae2b7f6e5b06c9b0289a8d815f8695856_cgraph" id="class_model_handle_ae2b7f6e5b06c9b0289a8d815f8695856_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,32"/>
+<area shape="rect" href="class_model_body.html#a6532a20c7f2afac4f5a67376348243f6" title=" " alt="" coords="260,5,452,32"/>
+<area shape="rect" href="class_model_body.html#ad43381fc79a27744353193d04b983c1f" title=" " alt="" coords="500,5,627,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26241c1c6e14d0f6727fc9b43d571354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26241c1c6e14d0f6727fc9b43d571354">&#9670;&nbsp;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelHandle::execute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor of copy Run simulation </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a39a8f4748e137c04223ab2608eac4f45">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00124">124</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a26241c1c6e14d0f6727fc9b43d571354_cgraph.png" border="0" usemap="#class_model_handle_a26241c1c6e14d0f6727fc9b43d571354_cgraph" alt=""/></div>
+<map name="class_model_handle_a26241c1c6e14d0f6727fc9b43d571354_cgraph" id="class_model_handle_a26241c1c6e14d0f6727fc9b43d571354_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" href="class_model_body.html#a45e6984bb905e1e6087ea36d0b70bb61" title=" " alt="" coords="221,5,376,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7108120e5b0f7c81e470505c3479cb3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7108120e5b0f7c81e470505c3479cb3f">&#9670;&nbsp;</a></span>exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelHandle::exists </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if the model contains the object that corresponds to the ID </p><dl class="section return"><dt>Retorna</dt><dd>true if exists in model or false if not. </dd></dl>
+
+<p>Implementa <a class="el" href="class_model.html#ad172a7022aec6d6b19f22c51ccfdff4f">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00150">150</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a7108120e5b0f7c81e470505c3479cb3f_cgraph.png" border="0" usemap="#class_model_handle_a7108120e5b0f7c81e470505c3479cb3f_cgraph" alt=""/></div>
+<map name="class_model_handle_a7108120e5b0f7c81e470505c3479cb3f_cgraph" id="class_model_handle_a7108120e5b0f7c81e470505c3479cb3f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" href="class_model_body.html#ae1309e0e483a511a64c549b3d73cc7ad" title=" " alt="" coords="208,5,349,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e9e72f6e34f06981bf7c2aa6cae87f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e9e72f6e34f06981bf7c2aa6cae87f3">&#9670;&nbsp;</a></span>findFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flow.html">Flow</a>* ModelHandle::findFlow </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a90e447010f7d5a39f775d9fcbc3a87b1">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00154">154</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a1e9e72f6e34f06981bf7c2aa6cae87f3_cgraph.png" border="0" usemap="#class_model_handle_a1e9e72f6e34f06981bf7c2aa6cae87f3_cgraph" alt=""/></div>
+<map name="class_model_handle_a1e9e72f6e34f06981bf7c2aa6cae87f3_cgraph" id="class_model_handle_a1e9e72f6e34f06981bf7c2aa6cae87f3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,177,32"/>
+<area shape="rect" href="class_model_body.html#a972a24a2847ce07030c2d4bb60c37eca" title=" " alt="" coords="225,5,384,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af64636fbedd128494cdfe580868bd245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64636fbedd128494cdfe580868bd245">&#9670;&nbsp;</a></span>findSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a>* ModelHandle::findSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a77f5b88c569556a5ee1f329dccf53c91">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00158">158</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_af64636fbedd128494cdfe580868bd245_cgraph.png" border="0" usemap="#class_model_handle_af64636fbedd128494cdfe580868bd245_cgraph" alt=""/></div>
+<map name="class_model_handle_af64636fbedd128494cdfe580868bd245_cgraph" id="class_model_handle_af64636fbedd128494cdfe580868bd245_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,32"/>
+<area shape="rect" href="class_model_body.html#aeec5b4529b9f2466d7dce2e9842450f1" title=" " alt="" coords="244,5,420,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a46c2e64955c7d0f2515a310155252962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c2e64955c7d0f2515a310155252962">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelHandle::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a <a class="el" href="class_flow.html">Flow</a> to <a class="el" href="class_model_handle.html">ModelHandle</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a8b28b38870acb0c9cb24c928891a592d">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00137">137</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a46c2e64955c7d0f2515a310155252962_cgraph.png" border="0" usemap="#class_model_handle_a46c2e64955c7d0f2515a310155252962_cgraph" alt=""/></div>
+<map name="class_model_handle_a46c2e64955c7d0f2515a310155252962_cgraph" id="class_model_handle_a46c2e64955c7d0f2515a310155252962_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,181,32"/>
+<area shape="rect" href="class_model_body.html#abc8878749ffac28158b810ee86df30e5" title=" " alt="" coords="229,5,392,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add16937d3a2e448d078d13307369d343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add16937d3a2e448d078d13307369d343">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model_handle.html">ModelHandle</a>&amp; ModelHandle::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_handle.html">ModelHandle</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e37991acbd4d27bf7afa7437b5e3473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e37991acbd4d27bf7afa7437b5e3473">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelHandle::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_handle.html">ModelHandle</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>operator == overload </p>
+
+</div>
+</div>
+<a id="abd874f405f4a3435ea6234bd2d2da15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd874f405f4a3435ea6234bd2d2da15c">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelHandle::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a flow to <a class="el" href="class_model.html">Model</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00128">128</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_abd874f405f4a3435ea6234bd2d2da15c_cgraph.png" border="0" usemap="#class_model_handle_abd874f405f4a3435ea6234bd2d2da15c_cgraph" alt=""/></div>
+<map name="class_model_handle_abd874f405f4a3435ea6234bd2d2da15c_cgraph" id="class_model_handle_abd874f405f4a3435ea6234bd2d2da15c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="class_model_body.html#a37c7f81b21d7f63182e7bc6e320f25b2" title=" " alt="" coords="220,5,372,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4687cde85c642c0ead99d8a07ecef4c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4687cde85c642c0ead99d8a07ecef4c2">&#9670;&nbsp;</a></span>setName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelHandle::setName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="class_model.html">Model</a>'s name </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td><a class="el" href="class_model.html">Model</a>'s name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#ab01f68499cf9c680d64d07c7160b4cf7">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00141">141</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_handle_a4687cde85c642c0ead99d8a07ecef4c2_cgraph.png" border="0" usemap="#class_model_handle_a4687cde85c642c0ead99d8a07ecef4c2_cgraph" alt=""/></div>
+<map name="class_model_handle_a4687cde85c642c0ead99d8a07ecef4c2_cgraph" id="class_model_handle_a4687cde85c642c0ead99d8a07ecef4c2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" href="class_model_body.html#a077662978644577f3a17df208418e653" title=" " alt="" coords="228,5,389,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a0b34a30f953f7c13c260b338eb6139f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b34a30f953f7c13c260b338eb6139f3">&#9670;&nbsp;</a></span>flowContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_flow.html">Flow</a> *&gt; ModelHandle::flowContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00091">91</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a712914806bf215e201d55ec1b311470b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712914806bf215e201d55ec1b311470b">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelHandle::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00093">93</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="af04f0e3106d7e1e27b7f109ea5f22925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04f0e3106d7e1e27b7f109ea5f22925">&#9670;&nbsp;</a></span>systemContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_system.html">System</a> *&gt; ModelHandle::systemContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00092">92</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a1818998a78b1dd04e344c134f364c76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1818998a78b1dd04e344c134f364c76b">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ModelHandle::time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Time it takes to run </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint6_2src_2model_impl_8h_source.html#l00084">84</a> do arquivo <a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir do seguinte arquivo:<ul>
+<li>src/<a class="el" href="_sprint6_2src_2model_impl_8h_source.html">modelImpl.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

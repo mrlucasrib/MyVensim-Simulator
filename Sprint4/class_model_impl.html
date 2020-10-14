@@ -1,0 +1,1255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Referência da Classe ModelImpl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pub-static-methods">Membros Públicos Estáticos</a> &#124;
+<a href="#pri-methods">Membros Privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="class_model_impl-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe ModelImpl</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia para ModelImpl:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl__inherit__graph.png" border="0" usemap="#_model_impl_inherit__map" alt="Inheritance graph"/></div>
+<map name="_model_impl_inherit__map" id="_model_impl_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,395,148,751"/>
+<area shape="rect" href="class_model.html" title=" " alt="" coords="10,5,143,347"/>
+</map>
+</div>
+<div class="dynheader">
+Diagrama de colaboração para ModelImpl:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl__coll__graph.png" border="0" usemap="#_model_impl_coll__map" alt="Collaboration graph"/></div>
+<map name="_model_impl_coll__map" id="_model_impl_coll__map">
+<area shape="rect" title=" " alt="" coords="5,395,148,751"/>
+<area shape="rect" href="class_model.html" title=" " alt="" coords="10,5,143,347"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:ad726a1aa1f7a44ac7d2face45c5bbdf1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">systemIterator</a></td></tr>
+<tr class="separator:ad726a1aa1f7a44ac7d2face45c5bbdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83192186cc587df6c83e3ccaefdbfe5b"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">flowIterator</a></td></tr>
+<tr class="separator:a83192186cc587df6c83e3ccaefdbfe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad726a1aa1f7a44ac7d2face45c5bbdf1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">systemIterator</a></td></tr>
+<tr class="separator:ad726a1aa1f7a44ac7d2face45c5bbdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83192186cc587df6c83e3ccaefdbfe5b"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">flowIterator</a></td></tr>
+<tr class="separator:a83192186cc587df6c83e3ccaefdbfe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a081505846c37ce9928f2176d77db4bc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a081505846c37ce9928f2176d77db4bc8">ModelImpl</a> ()</td></tr>
+<tr class="separator:a081505846c37ce9928f2176d77db4bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55eb54deee60e04fed0e051e81fe07f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aa55eb54deee60e04fed0e051e81fe07f">ModelImpl</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> *)</td></tr>
+<tr class="separator:aa55eb54deee60e04fed0e051e81fe07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25c538c8d4259eab1a97442cdfbddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a0a25c538c8d4259eab1a97442cdfbddc">execute</a> (int start, int end) override</td></tr>
+<tr class="separator:a0a25c538c8d4259eab1a97442cdfbddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503f70cf52d1c793292aae7b5088b24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a503f70cf52d1c793292aae7b5088b24b">remove</a> (<a class="el" href="class_flow.html">Flow</a> *) override</td></tr>
+<tr class="separator:a503f70cf52d1c793292aae7b5088b24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3d3c64275deb96f4180618279b0825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825">add</a> (<a class="el" href="class_flow.html">Flow</a> *f) override</td></tr>
+<tr class="separator:aca3d3c64275deb96f4180618279b0825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6ef8f72413650749d9ca9850226a6b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a6d6ef8f72413650749d9ca9850226a6b">getName</a> () const override</td></tr>
+<tr class="separator:a6d6ef8f72413650749d9ca9850226a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b0843d27be3d06e19b7b68243b337f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aa8b0843d27be3d06e19b7b68243b337f">setName</a> (const char *<a class="el" href="class_model_impl.html#acfac807561a9249a14886ab54cb3ce91">name</a>) override</td></tr>
+<tr class="separator:aa8b0843d27be3d06e19b7b68243b337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081505846c37ce9928f2176d77db4bc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a081505846c37ce9928f2176d77db4bc8">ModelImpl</a> ()</td></tr>
+<tr class="separator:a081505846c37ce9928f2176d77db4bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55eb54deee60e04fed0e051e81fe07f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aa55eb54deee60e04fed0e051e81fe07f">ModelImpl</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> *)</td></tr>
+<tr class="separator:aa55eb54deee60e04fed0e051e81fe07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25c538c8d4259eab1a97442cdfbddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a0a25c538c8d4259eab1a97442cdfbddc">execute</a> (int start, int end) override</td></tr>
+<tr class="separator:a0a25c538c8d4259eab1a97442cdfbddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503f70cf52d1c793292aae7b5088b24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a503f70cf52d1c793292aae7b5088b24b">remove</a> (<a class="el" href="class_flow.html">Flow</a> *) override</td></tr>
+<tr class="separator:a503f70cf52d1c793292aae7b5088b24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3d3c64275deb96f4180618279b0825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825">add</a> (<a class="el" href="class_flow.html">Flow</a> *f) override</td></tr>
+<tr class="separator:aca3d3c64275deb96f4180618279b0825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6ef8f72413650749d9ca9850226a6b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a6d6ef8f72413650749d9ca9850226a6b">getName</a> () const override</td></tr>
+<tr class="separator:a6d6ef8f72413650749d9ca9850226a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd092d6f74674aa53bebc51c386368d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#afd092d6f74674aa53bebc51c386368d0">setName</a> (std::string n) override</td></tr>
+<tr class="separator:afd092d6f74674aa53bebc51c386368d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addab0c8075722dc27a9a3783c428c0c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#addab0c8075722dc27a9a3783c428c0c3">createSystem</a> (const std::string &amp;) override</td></tr>
+<tr class="separator:addab0c8075722dc27a9a3783c428c0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7931d67fd5a20e06f0b8cf2d36f7074"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ae7931d67fd5a20e06f0b8cf2d36f7074">exists</a> (const std::string &amp;, <a class="el" href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>) override</td></tr>
+<tr class="separator:ae7931d67fd5a20e06f0b8cf2d36f7074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d22128f6314d6564386a0c01da5855"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ae2d22128f6314d6564386a0c01da5855">findFlow</a> (const std::string &amp;) override</td></tr>
+<tr class="separator:ae2d22128f6314d6564386a0c01da5855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad7b7e12f57b59f2f73702835caaa9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a8ad7b7e12f57b59f2f73702835caaa9e">findSystem</a> (const std::string &amp;) override</td></tr>
+<tr class="separator:a8ad7b7e12f57b59f2f73702835caaa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23e900d670884c21f8c23baa49ab46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ab23e900d670884c21f8c23baa49ab46a">createSystem</a> (const std::string &amp;, double v) override</td></tr>
+<tr class="separator:ab23e900d670884c21f8c23baa49ab46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3286251acdf80ed0b79aad3afc3b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a1f3286251acdf80ed0b79aad3afc3b5c">add</a> (<a class="el" href="class_system.html">System</a> *s) override</td></tr>
+<tr class="separator:a1f3286251acdf80ed0b79aad3afc3b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:ae3b375de5f6df4faf74a95d64748e048 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ae3b375de5f6df4faf74a95d64748e048">Model</a> ()</td></tr>
+<tr class="separator:ae3b375de5f6df4faf74a95d64748e048 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc11aa4cb3c58331b262150382e7d1c inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a6bc11aa4cb3c58331b262150382e7d1c">Model</a> (<a class="el" href="class_model.html">Model</a> *)</td></tr>
+<tr class="separator:a6bc11aa4cb3c58331b262150382e7d1c inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70be574c6355fd45038f10b02dbce4c6 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a70be574c6355fd45038f10b02dbce4c6">execute</a> (int start, int end)</td></tr>
+<tr class="separator:a70be574c6355fd45038f10b02dbce4c6 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054350312f72e04ef46fe5b14f987735 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a054350312f72e04ef46fe5b14f987735">add</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
+<tr class="separator:a054350312f72e04ef46fe5b14f987735 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd7230f2fc199f75219e656c0690ac3 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#afdd7230f2fc199f75219e656c0690ac3">add</a> (<a class="el" href="class_flux.html">Flux</a> *f)</td></tr>
+<tr class="separator:afdd7230f2fc199f75219e656c0690ac3 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f28ba97fb919a75da13432bb3872fa inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#af3f28ba97fb919a75da13432bb3872fa">remove</a> (<a class="el" href="class_system.html">System</a> *s)</td></tr>
+<tr class="separator:af3f28ba97fb919a75da13432bb3872fa inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06aaf107957095841397c1d3c9cf3e55 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a06aaf107957095841397c1d3c9cf3e55">remove</a> (<a class="el" href="class_flux.html">Flux</a> *f)</td></tr>
+<tr class="separator:a06aaf107957095841397c1d3c9cf3e55 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#ab24287f17f6abb3853ef92cf508a6629">createFlow</a> (std::string id, <a class="el" href="class_system.html">System</a> *s, <a class="el" href="class_system.html">System</a> *t)</td></tr>
+<tr class="separator:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a93a5cd7355277eb889e1e78a08346ecc">createFlow</a> (std::string id)</td></tr>
+<tr class="separator:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#ab24287f17f6abb3853ef92cf508a6629">createFlow</a> (std::string id, <a class="el" href="class_system.html">System</a> *s, <a class="el" href="class_system.html">System</a> *t)</td></tr>
+<tr class="separator:ab24287f17f6abb3853ef92cf508a6629 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename TYPE_FLOW &gt; </td></tr>
+<tr class="memitem:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a93a5cd7355277eb889e1e78a08346ecc">createFlow</a> (std::string id)</td></tr>
+<tr class="separator:a93a5cd7355277eb889e1e78a08346ecc inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros Públicos Estáticos</h2></td></tr>
+<tr class="memitem:a8a9167b35336431e394f0042271620cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a8a9167b35336431e394f0042271620cb">createModel</a> ()</td></tr>
+<tr class="separator:a8a9167b35336431e394f0042271620cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Membros Públicos Estáticos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
+<tr class="separator:accd28300871325fce68d551cebf27220 inherit pub_static_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad8bed79d4c63d8621640da27b8516a inherit pub_static_methods_class_model"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a0ad8bed79d4c63d8621640da27b8516a">createModel</a> ()</td></tr>
+<tr class="separator:a0ad8bed79d4c63d8621640da27b8516a inherit pub_static_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Membros Privados</h2></td></tr>
+<tr class="memitem:a35a919829bfee6959d5ae555eafd363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a35a919829bfee6959d5ae555eafd363c">operator=</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> &amp;)</td></tr>
+<tr class="separator:a35a919829bfee6959d5ae555eafd363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eda9425ead13c950b2e557942d78441"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a3eda9425ead13c950b2e557942d78441">operator==</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> &amp;)</td></tr>
+<tr class="separator:a3eda9425ead13c950b2e557942d78441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3878d49ed3dc2d83f680e146b888797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#ae3878d49ed3dc2d83f680e146b888797">operator=</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> &amp;)</td></tr>
+<tr class="separator:ae3878d49ed3dc2d83f680e146b888797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eda9425ead13c950b2e557942d78441"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a3eda9425ead13c950b2e557942d78441">operator==</a> (<a class="el" href="class_model_impl.html">ModelImpl</a> &amp;)</td></tr>
+<tr class="separator:a3eda9425ead13c950b2e557942d78441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:aad5b642a4500713444c44bdadd5d19dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#aad5b642a4500713444c44bdadd5d19dc">time</a></td></tr>
+<tr class="separator:aad5b642a4500713444c44bdadd5d19dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4329030ed102be07759e52c472509c21"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a4329030ed102be07759e52c472509c21">flowContainer</a></td></tr>
+<tr class="separator:a4329030ed102be07759e52c472509c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056ee40b5c3b86a43a47cfa95b52e009"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a056ee40b5c3b86a43a47cfa95b52e009">systemContainer</a></td></tr>
+<tr class="separator:a056ee40b5c3b86a43a47cfa95b52e009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfac807561a9249a14886ab54cb3ce91"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#acfac807561a9249a14886ab54cb3ce91">name</a></td></tr>
+<tr class="separator:acfac807561a9249a14886ab54cb3ce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7534904f5a4b12ef7a4addc65590189b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_impl.html#a7534904f5a4b12ef7a4addc65590189b">name</a></td></tr>
+<tr class="separator:a7534904f5a4b12ef7a4addc65590189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Outros membros herdados</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_model"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_model')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:aec8133222ae2dc3eb2cc39cb03aa0edf inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flux.html">Flux</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aec8133222ae2dc3eb2cc39cb03aa0edf">flux_vector</a></td></tr>
+<tr class="separator:aec8133222ae2dc3eb2cc39cb03aa0edf inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadeef5ef7a6e2d9d6b9c3d9a86719207 inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aadeef5ef7a6e2d9d6b9c3d9a86719207">system_vector</a></td></tr>
+<tr class="separator:aadeef5ef7a6e2d9d6b9c3d9a86719207 inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock">
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00011">11</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+</div><h2 class="groupheader">Definições de tipos</h2>
+<a id="a83192186cc587df6c83e3ccaefdbfe5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83192186cc587df6c83e3ccaefdbfe5b">&#9670;&nbsp;</a></span>flowIterator <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_flow.html">Flow</a> *&gt;::iterator <a class="el" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">ModelImpl::flowIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00062">62</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a83192186cc587df6c83e3ccaefdbfe5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83192186cc587df6c83e3ccaefdbfe5b">&#9670;&nbsp;</a></span>flowIterator <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_flow.html">Flow</a> *&gt;::iterator <a class="el" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">ModelImpl::flowIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8h_source.html#l00076">76</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="ad726a1aa1f7a44ac7d2face45c5bbdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad726a1aa1f7a44ac7d2face45c5bbdf1">&#9670;&nbsp;</a></span>systemIterator <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_system.html">System</a> *&gt;::iterator <a class="el" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">ModelImpl::systemIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_flow.html">Flow</a> vector </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00061">61</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="ad726a1aa1f7a44ac7d2face45c5bbdf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad726a1aa1f7a44ac7d2face45c5bbdf1">&#9670;&nbsp;</a></span>systemIterator <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_system.html">System</a> *&gt;::iterator <a class="el" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">ModelImpl::systemIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_flow.html">Flow</a> vector </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8h_source.html#l00075">75</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a081505846c37ce9928f2176d77db4bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081505846c37ce9928f2176d77db4bc8">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImpl::ModelImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default <a class="el" href="class_model_impl.html">ModelImpl</a>'s constructor </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00011">11</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa55eb54deee60e04fed0e051e81fe07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55eb54deee60e04fed0e051e81fe07f">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImpl::ModelImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> *&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor of copy </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00007">7</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a081505846c37ce9928f2176d77db4bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081505846c37ce9928f2176d77db4bc8">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImpl::ModelImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default <a class="el" href="class_model_impl.html">ModelImpl</a>'s constructor </p>
+
+</div>
+</div>
+<a id="aa55eb54deee60e04fed0e051e81fe07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55eb54deee60e04fed0e051e81fe07f">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImpl::ModelImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor of copy </p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções membros</h2>
+<a id="aca3d3c64275deb96f4180618279b0825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3d3c64275deb96f4180618279b0825">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a <a class="el" href="class_flow.html">Flow</a> to <a class="el" href="class_model_impl.html">ModelImpl</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00015">15</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl_aca3d3c64275deb96f4180618279b0825_icgraph.png" border="0" usemap="#class_model_impl_aca3d3c64275deb96f4180618279b0825_icgraph" alt=""/></div>
+<map name="class_model_impl_aca3d3c64275deb96f4180618279b0825_icgraph" id="class_model_impl_aca3d3c64275deb96f4180618279b0825_icgraph">
+<area shape="rect" title=" " alt="" coords="243,5,365,32"/>
+<area shape="rect" href="class_model_impl.html#addab0c8075722dc27a9a3783c428c0c3" title=" " alt="" coords="5,5,195,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca3d3c64275deb96f4180618279b0825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3d3c64275deb96f4180618279b0825">&#9670;&nbsp;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a <a class="el" href="class_flow.html">Flow</a> to <a class="el" href="class_model_impl.html">ModelImpl</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#ad248b54040ab38124af621cbc4c7c2e6">Model</a>.</p>
+
+</div>
+</div>
+<a id="a1f3286251acdf80ed0b79aad3afc3b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3286251acdf80ed0b79aad3afc3b5c">&#9670;&nbsp;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a1c57f13b17e1fd598fa7ebe1fa55a7df">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00142">142</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8a9167b35336431e394f0042271620cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a9167b35336431e394f0042271620cb">&#9670;&nbsp;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model.html">Model</a> * ModelImpl::createModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00121">121</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl_a8a9167b35336431e394f0042271620cb_cgraph.png" border="0" usemap="#class_model_impl_a8a9167b35336431e394f0042271620cb_cgraph" alt=""/></div>
+<map name="class_model_impl_a8a9167b35336431e394f0042271620cb_cgraph" id="class_model_impl_a8a9167b35336431e394f0042271620cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" href="class_model.html#accd28300871325fce68d551cebf27220" title=" " alt="" coords="233,5,384,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addab0c8075722dc27a9a3783c428c0c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addab0c8075722dc27a9a3783c428c0c3">&#9670;&nbsp;</a></span>createSystem() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelImpl::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#af93ee2428cac67237763e7f250fd5ecc">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00101">101</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl_addab0c8075722dc27a9a3783c428c0c3_cgraph.png" border="0" usemap="#class_model_impl_addab0c8075722dc27a9a3783c428c0c3_cgraph" alt=""/></div>
+<map name="class_model_impl_addab0c8075722dc27a9a3783c428c0c3_cgraph" id="class_model_impl_addab0c8075722dc27a9a3783c428c0c3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825" title=" " alt="" coords="243,5,365,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab23e900d670884c21f8c23baa49ab46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23e900d670884c21f8c23baa49ab46a">&#9670;&nbsp;</a></span>createSystem() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelImpl::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a567a41790a2ffd1799b7b5cd2f298a90">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00108">108</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_impl_ab23e900d670884c21f8c23baa49ab46a_cgraph.png" border="0" usemap="#class_model_impl_ab23e900d670884c21f8c23baa49ab46a_cgraph" alt=""/></div>
+<map name="class_model_impl_ab23e900d670884c21f8c23baa49ab46a_cgraph" id="class_model_impl_ab23e900d670884c21f8c23baa49ab46a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825" title=" " alt="" coords="243,5,365,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a25c538c8d4259eab1a97442cdfbddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a25c538c8d4259eab1a97442cdfbddc">&#9670;&nbsp;</a></span>execute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::execute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Run simulation </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a39a8f4748e137c04223ab2608eac4f45">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00029">29</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0a25c538c8d4259eab1a97442cdfbddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a25c538c8d4259eab1a97442cdfbddc">&#9670;&nbsp;</a></span>execute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::execute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Run simulation </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">end</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a39a8f4748e137c04223ab2608eac4f45">Model</a>.</p>
+
+</div>
+</div>
+<a id="ae7931d67fd5a20e06f0b8cf2d36f7074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7931d67fd5a20e06f0b8cf2d36f7074">&#9670;&nbsp;</a></span>exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::exists </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if the model contains the object that corresponds to the ID </p><dl class="section return"><dt>Retorna</dt><dd>true if exists in model or false if not. </dd></dl>
+
+<p>Implementa <a class="el" href="class_model.html#ad172a7022aec6d6b19f22c51ccfdff4f">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00083">83</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae2d22128f6314d6564386a0c01da5855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d22128f6314d6564386a0c01da5855">&#9670;&nbsp;</a></span>findFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_flow.html">Flow</a> * ModelImpl::findFlow </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a90e447010f7d5a39f775d9fcbc3a87b1">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00125">125</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ad7b7e12f57b59f2f73702835caaa9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad7b7e12f57b59f2f73702835caaa9e">&#9670;&nbsp;</a></span>findSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelImpl::findSystem </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="class_model.html#a77f5b88c569556a5ee1f329dccf53c91">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00133">133</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d6ef8f72413650749d9ca9850226a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6ef8f72413650749d9ca9850226a6b">&#9670;&nbsp;</a></span>getName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelImpl::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get <a class="el" href="class_model.html">Model</a>'s name </p><dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_model.html">Model</a>'s name </dd></dl>
+
+<p>Implementa <a class="el" href="class_model.html#a8b28b38870acb0c9cb24c928891a592d">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00074">74</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d6ef8f72413650749d9ca9850226a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d6ef8f72413650749d9ca9850226a6b">&#9670;&nbsp;</a></span>getName() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelImpl::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get <a class="el" href="class_model.html">Model</a>'s name </p><dl class="section return"><dt>Retorna</dt><dd><a class="el" href="class_model.html">Model</a>'s name </dd></dl>
+
+<p>Implementa <a class="el" href="class_model.html#a8b28b38870acb0c9cb24c928891a592d">Model</a>.</p>
+
+</div>
+</div>
+<a id="a35a919829bfee6959d5ae555eafd363c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a919829bfee6959d5ae555eafd363c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp; ModelImpl::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00061">61</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae3878d49ed3dc2d83f680e146b888797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3878d49ed3dc2d83f680e146b888797">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model_impl.html">ModelImpl</a>&amp; ModelImpl::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eda9425ead13c950b2e557942d78441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eda9425ead13c950b2e557942d78441">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>operator == overload </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00065">65</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3eda9425ead13c950b2e557942d78441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eda9425ead13c950b2e557942d78441">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_model_impl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>operator == overload </p>
+
+</div>
+</div>
+<a id="a503f70cf52d1c793292aae7b5088b24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503f70cf52d1c793292aae7b5088b24b">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a flow to <a class="el" href="class_model.html">Model</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00020">20</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a503f70cf52d1c793292aae7b5088b24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503f70cf52d1c793292aae7b5088b24b">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_flow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a flow to <a class="el" href="class_model.html">Model</a> </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a7e199aa629d10014ca28d48aef8d4134">Model</a>.</p>
+
+</div>
+</div>
+<a id="aa8b0843d27be3d06e19b7b68243b337f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b0843d27be3d06e19b7b68243b337f">&#9670;&nbsp;</a></span>setName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::setName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="class_model.html">Model</a>'s name </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td><a class="el" href="class_model.html">Model</a>'s name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#a1ad5d5029ee337343b39a724167b21cb">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html#l00078">78</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd092d6f74674aa53bebc51c386368d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd092d6f74674aa53bebc51c386368d0">&#9670;&nbsp;</a></span>setName() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModelImpl::setName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set <a class="el" href="class_model.html">Model</a>'s name </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td><a class="el" href="class_model.html">Model</a>'s name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_model.html#ab01f68499cf9c680d64d07c7160b4cf7">Model</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html#l00079">79</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a4329030ed102be07759e52c472509c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4329030ed102be07759e52c472509c21">&#9670;&nbsp;</a></span>flowContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt; ModelImpl::flowContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00023">23</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a7534904f5a4b12ef7a4addc65590189b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7534904f5a4b12ef7a4addc65590189b">&#9670;&nbsp;</a></span>name <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModelImpl::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint5_2src_2model_impl_8h_source.html#l00025">25</a> do arquivo <a class="el" href="_sprint5_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="acfac807561a9249a14886ab54cb3ce91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfac807561a9249a14886ab54cb3ce91">&#9670;&nbsp;</a></span>name <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ModelImpl::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00025">25</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="a056ee40b5c3b86a43a47cfa95b52e009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056ee40b5c3b86a43a47cfa95b52e009">&#9670;&nbsp;</a></span>systemContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt; ModelImpl::systemContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00024">24</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<a id="aad5b642a4500713444c44bdadd5d19dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5b642a4500713444c44bdadd5d19dc">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ModelImpl::time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Time it takes to run </p>
+
+<p class="definition">Definição na linha <a class="el" href="_sprint4_2src_2model_impl_8h_source.html#l00016">16</a> do arquivo <a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>src/<a class="el" href="_sprint4_2src_2model_impl_8h_source.html">modelImpl.h</a></li>
+<li>src/<a class="el" href="_sprint4_2src_2model_impl_8cpp_source.html">modelImpl.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

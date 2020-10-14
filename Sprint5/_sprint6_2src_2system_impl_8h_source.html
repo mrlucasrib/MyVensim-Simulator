@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de /home/lucas/Documentos/ENGENHARIA DE SOFTWARE/Sprint6/src/systemImpl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a205e11a7435a65be099cd8ad04204a6.html">Sprint6</a></li><li class="navelem"><a class="el" href="dir_0844840ce97f583c64336030f0d78e24.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">systemImpl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint6_2src_2system_impl_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 11/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MYVENSIM_SYSTEMIMPL_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MYVENSIM_SYSTEMIMPL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint6_2src_2system_8h.html">system.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="handle__body_8h.html">handle_body.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_system_body.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_system_body.html">SystemBody</a> : <span class="keyword">public</span> <a class="code" href="class_body.html">Body</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_system_body.html#a82fcaefb88098be09dbc59bf8b012922">   13</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_system_body.html#a82fcaefb88098be09dbc59bf8b012922">value</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_system_body.html#a62da4563b8efd2a08f32c309e2790314">   14</a></span>&#160;    std::string <a class="code" href="class_system_body.html#a62da4563b8efd2a08f32c309e2790314">name</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::string <a class="code" href="class_system_body.html#ade0121ff9741d3a8317a0343f4e95ea7">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_system_body.html#a85d71f126c28018dab75fe69f4fe001e">setName</a>(std::string <a class="code" href="class_system_body.html#a62da4563b8efd2a08f32c309e2790314">name</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_system_body.html#a147c54091a4184a5cfb99215702d86eb">SystemBody</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_body.html#a147c54091a4184a5cfb99215702d86eb">SystemBody</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_body.html#a147c54091a4184a5cfb99215702d86eb">SystemBody</a>(<a class="code" href="class_system_body.html">SystemBody</a> *system);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_system_body.html#a163f8ce5fe26ad34ee5a0b13bf7798b9">setValue</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_system_body.html#a947ef5bd9e283f54caa0afb04dea5028">getValue</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_system_body.html#a7c6ce8185a0fd85dd8a329e22df035ab">~SystemBody</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_system_body.html">SystemBody</a> &amp;<a class="code" href="class_system_body.html#a91567218bc589b03fd34c0a871507888">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_system_body.html">SystemBody</a> &amp;);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_system_body.html#a70c9d225e88e922e342b38e037db5e30">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_system_body.html">SystemBody</a> &amp;);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_system_handle.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_system_handle.html">SystemHandle</a> : <span class="keyword">public</span> <a class="code" href="class_system.html">System</a>, <span class="keyword">public</span> <a class="code" href="class_handle.html">Handle</a>&lt;SystemBody&gt; {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_system_handle.html#a48639b0e08127b3d9a475eec2076259f">   60</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_system_handle.html#a48639b0e08127b3d9a475eec2076259f">value</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_system_handle.html#a55c0e980aad419095af5273298d06deb">   61</a></span>&#160;    std::string <a class="code" href="class_system_handle.html#a55c0e980aad419095af5273298d06deb">name</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_system_handle.html#a0b211dc9aa285560167bba7d1c580987">   63</a></span>&#160;    std::string <a class="code" href="class_system_handle.html#a0b211dc9aa285560167bba7d1c580987">getName</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="class_system_body.html#ade0121ff9741d3a8317a0343f4e95ea7">getName</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_system_handle.html#aa86926bf0aa0f45c1ff752ac1b582f5a">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_system_handle.html#aa86926bf0aa0f45c1ff752ac1b582f5a">setName</a>(std::string n){</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="class_system_body.html#a85d71f126c28018dab75fe69f4fe001e">setName</a>(n);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_system_handle.html#a89a4db1dc76231a95167a904fd0175c4">   74</a></span>&#160;    <a class="code" href="class_system_handle.html#a89a4db1dc76231a95167a904fd0175c4">SystemHandle</a>(){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a> = <span class="keyword">new</span> <a class="code" href="class_system_body.html">SystemBody</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_system_handle.html#a18515b2cb8abf49b547952b0fb80b838">   81</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_handle.html#a18515b2cb8abf49b547952b0fb80b838">SystemHandle</a>(<span class="keywordtype">double</span> v){</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a> = <span class="keyword">new</span> <a class="code" href="class_system_body.html">SystemBody</a>(v);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_system_handle.html#a89a4db1dc76231a95167a904fd0175c4">SystemHandle</a>(<a class="code" href="class_system_handle.html">SystemHandle</a> *system);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_system_handle.html#a9c4f011dec76318b9064533462cb2dca">   95</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_system_handle.html#a9c4f011dec76318b9064533462cb2dca">setValue</a>(<span class="keywordtype">double</span> v)<span class="keyword"> override</span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="class_system_body.html#a163f8ce5fe26ad34ee5a0b13bf7798b9">setValue</a>(v);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_system_handle.html#a1ae195a34bf44575307575f894c38f2c">  103</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_system_handle.html#a1ae195a34bf44575307575f894c38f2c">getValue</a>()<span class="keyword"> override</span>{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;<a class="code" href="class_system_body.html#a947ef5bd9e283f54caa0afb04dea5028">getValue</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_system_handle.html#a915a5d8fd6aaee1e725afd508c3d78b4">  107</a></span>&#160;    <a class="code" href="class_system_handle.html#a915a5d8fd6aaee1e725afd508c3d78b4">~SystemHandle</a>()<span class="keyword"> override</span>{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif //MYVENSIM_SYSTEMIMPL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_system_handle_html_a9c4f011dec76318b9064533462cb2dca"><div class="ttname"><a href="class_system_handle.html#a9c4f011dec76318b9064533462cb2dca">SystemHandle::setValue</a></div><div class="ttdeci">void setValue(double v) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00095">systemImpl.h:95</a></div></div>
+<div class="ttc" id="aclass_system_handle_html"><div class="ttname"><a href="class_system_handle.html">SystemHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00058">systemImpl.h:58</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a7c6ce8185a0fd85dd8a329e22df035ab"><div class="ttname"><a href="class_system_body.html#a7c6ce8185a0fd85dd8a329e22df035ab">SystemBody::~SystemBody</a></div><div class="ttdeci">~SystemBody()=default</div></div>
+<div class="ttc" id="aclass_system_handle_html_a48639b0e08127b3d9a475eec2076259f"><div class="ttname"><a href="class_system_handle.html#a48639b0e08127b3d9a475eec2076259f">SystemHandle::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00060">systemImpl.h:60</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a947ef5bd9e283f54caa0afb04dea5028"><div class="ttname"><a href="class_system_body.html#a947ef5bd9e283f54caa0afb04dea5028">SystemBody::getValue</a></div><div class="ttdeci">double getValue()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00021">systemImpl.cpp:21</a></div></div>
+<div class="ttc" id="aclass_handle_html_a16021e57596d7369dfa1a9fadc35c06f"><div class="ttname"><a href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">Handle&lt; SystemBody &gt;::pImpl_</a></div><div class="ttdeci">SystemBody * pImpl_</div><div class="ttdoc">referência para a implementação</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00063">handle_body.h:63</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_aa86926bf0aa0f45c1ff752ac1b582f5a"><div class="ttname"><a href="class_system_handle.html#aa86926bf0aa0f45c1ff752ac1b582f5a">SystemHandle::setName</a></div><div class="ttdeci">void setName(std::string n)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00067">systemImpl.h:67</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a1ae195a34bf44575307575f894c38f2c"><div class="ttname"><a href="class_system_handle.html#a1ae195a34bf44575307575f894c38f2c">SystemHandle::getValue</a></div><div class="ttdeci">double getValue() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00103">systemImpl.h:103</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a91567218bc589b03fd34c0a871507888"><div class="ttname"><a href="class_system_body.html#a91567218bc589b03fd34c0a871507888">SystemBody::operator=</a></div><div class="ttdeci">SystemBody &amp; operator=(const SystemBody &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00044">systemImpl.cpp:44</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a163f8ce5fe26ad34ee5a0b13bf7798b9"><div class="ttname"><a href="class_system_body.html#a163f8ce5fe26ad34ee5a0b13bf7798b9">SystemBody::setValue</a></div><div class="ttdeci">void setValue(double)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00025">systemImpl.cpp:25</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a89a4db1dc76231a95167a904fd0175c4"><div class="ttname"><a href="class_system_handle.html#a89a4db1dc76231a95167a904fd0175c4">SystemHandle::SystemHandle</a></div><div class="ttdeci">SystemHandle()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00074">systemImpl.h:74</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a18515b2cb8abf49b547952b0fb80b838"><div class="ttname"><a href="class_system_handle.html#a18515b2cb8abf49b547952b0fb80b838">SystemHandle::SystemHandle</a></div><div class="ttdeci">SystemHandle(double v)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00081">systemImpl.h:81</a></div></div>
+<div class="ttc" id="aclass_system_body_html"><div class="ttname"><a href="class_system_body.html">SystemBody</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00011">systemImpl.h:11</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a55c0e980aad419095af5273298d06deb"><div class="ttname"><a href="class_system_handle.html#a55c0e980aad419095af5273298d06deb">SystemHandle::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00061">systemImpl.h:61</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a70c9d225e88e922e342b38e037db5e30"><div class="ttname"><a href="class_system_body.html#a70c9d225e88e922e342b38e037db5e30">SystemBody::operator==</a></div><div class="ttdeci">bool operator==(const SystemBody &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00029">systemImpl.cpp:29</a></div></div>
+<div class="ttc" id="aclass_handle_html"><div class="ttname"><a href="class_handle.html">Handle</a></div><div class="ttdoc">The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;...</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00025">handle_body.h:25</a></div></div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2system_8h_source.html#l00009">system.h:9</a></div></div>
+<div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G...</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00073">handle_body.h:73</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a915a5d8fd6aaee1e725afd508c3d78b4"><div class="ttname"><a href="class_system_handle.html#a915a5d8fd6aaee1e725afd508c3d78b4">SystemHandle::~SystemHandle</a></div><div class="ttdeci">~SystemHandle() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00107">systemImpl.h:107</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a147c54091a4184a5cfb99215702d86eb"><div class="ttname"><a href="class_system_body.html#a147c54091a4184a5cfb99215702d86eb">SystemBody::SystemBody</a></div><div class="ttdeci">SystemBody()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00016">systemImpl.cpp:16</a></div></div>
+<div class="ttc" id="aclass_system_handle_html_a0b211dc9aa285560167bba7d1c580987"><div class="ttname"><a href="class_system_handle.html#a0b211dc9aa285560167bba7d1c580987">SystemHandle::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00063">systemImpl.h:63</a></div></div>
+<div class="ttc" id="aclass_system_body_html_ade0121ff9741d3a8317a0343f4e95ea7"><div class="ttname"><a href="class_system_body.html#ade0121ff9741d3a8317a0343f4e95ea7">SystemBody::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00036">systemImpl.cpp:36</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a62da4563b8efd2a08f32c309e2790314"><div class="ttname"><a href="class_system_body.html#a62da4563b8efd2a08f32c309e2790314">SystemBody::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00014">systemImpl.h:14</a></div></div>
+<div class="ttc" id="ahandle__body_8h_html"><div class="ttname"><a href="handle__body_8h.html">handle_body.h</a></div></div>
+<div class="ttc" id="a_sprint6_2src_2system_8h_html"><div class="ttname"><a href="_sprint6_2src_2system_8h.html">system.h</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a85d71f126c28018dab75fe69f4fe001e"><div class="ttname"><a href="class_system_body.html#a85d71f126c28018dab75fe69f4fe001e">SystemBody::setName</a></div><div class="ttdeci">virtual void setName(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8cpp_source.html#l00040">systemImpl.cpp:40</a></div></div>
+<div class="ttc" id="aclass_system_body_html_a82fcaefb88098be09dbc59bf8b012922"><div class="ttname"><a href="class_system_body.html#a82fcaefb88098be09dbc59bf8b012922">SystemBody::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2system_impl_8h_source.html#l00013">systemImpl.h:13</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

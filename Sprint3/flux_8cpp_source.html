@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de src/flux.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_616dd5d56a559d0911cab784383557a0.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">flux.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="flux_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 11/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="flux_8h.html">flux.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="lua_8hpp.html">lua.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_flux.html#a1e8f1efffccbc22015d2345e6be7fbb5">    8</a></span>&#160;<a class="code" href="class_flux.html#a1e8f1efffccbc22015d2345e6be7fbb5">Flux::Flux</a>() {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a> = NULL;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = NULL;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_flux.html#a9622291c1cc2e72b64c43996188a4579">   13</a></span>&#160;<a class="code" href="class_flux.html#a1e8f1efffccbc22015d2345e6be7fbb5">Flux::Flux</a>(<a class="code" href="class_system.html">System</a> *from, <a class="code" href="class_system.html">System</a> *to) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a> = from;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = to;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_flux.html#af5364ba22c06b0d0f5020e8fad227316">   18</a></span>&#160;<a class="code" href="class_system.html">System</a> *<a class="code" href="class_flux.html#af5364ba22c06b0d0f5020e8fad227316">Flux::getSource</a>() {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_flux.html#a55a977018cf85b238aec30e9f587e573">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_flux.html#a55a977018cf85b238aec30e9f587e573">Flux::setTarget</a>(<a class="code" href="class_system.html">System</a> *s) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = s;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_flux.html#a038f19c7a7aaa1cd788b8cdc4b1a5173">   26</a></span>&#160;<a class="code" href="class_system.html">System</a> *<a class="code" href="class_flux.html#a038f19c7a7aaa1cd788b8cdc4b1a5173">Flux::getTarget</a>() {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_flux.html#ad2641b24a1121ec68ea2483636cc6ab6">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_flux.html#ad2641b24a1121ec68ea2483636cc6ab6">Flux::clearSource</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a> = NULL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_flux.html#a8e9fe98ab473905788ed6a82696a7613">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_flux.html#a8e9fe98ab473905788ed6a82696a7613">Flux::clearTarget</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = NULL;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_flux.html#ab7d617fbd7f605b9d1c509fbb43bca7f">   39</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_flux.html#ab7d617fbd7f605b9d1c509fbb43bca7f">Flux::execute</a>() {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">double</span> result = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="lua_8h.html#a28186297f2e9f2de0652504633de8fb3">lua_State</a> *L = <a class="code" href="lauxlib_8h.html#a7d8712fcede90ae93d5a9a7b409c586e">luaL_newstate</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//    Add math Library</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="lauxlib_8h.html#af6e3e3ca0a445a50f34cfc26f89c7d61">luaL_requiref</a>(L, <span class="stringliteral">&quot;math&quot;</span>, <a class="code" href="lualib_8h.html#ad9a992586e14f1dd04f4983b8740605a">luaopen_math</a>, 1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//    Send variable to lua script</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="lua_8h.html#a77807056ba032d64b2def2b57dc53d53">lua_pushnumber</a>(L, this-&gt;<a class="code" href="class_flux.html#af5364ba22c06b0d0f5020e8fad227316">getSource</a>()-&gt;getValue());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="lua_8h.html#a8da855aa334f38b822cbaceda0d633be">lua_setglobal</a>(L, <span class="stringliteral">&quot;source&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="lua_8h.html#a77807056ba032d64b2def2b57dc53d53">lua_pushnumber</a>(L, this-&gt;<a class="code" href="class_flux.html#a038f19c7a7aaa1cd788b8cdc4b1a5173">getTarget</a>()-&gt;getValue());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="lua_8h.html#a8da855aa334f38b822cbaceda0d633be">lua_setglobal</a>(L, <span class="stringliteral">&quot;target&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> r = <a class="code" href="lauxlib_8h.html#a1a0639bfde6b1e2f6181af45b0137cf5">luaL_dostring</a>(L, this-&gt;<a class="code" href="class_flux.html#a33b15032851cdbefc36e6f80d7fb1876">formula</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (r == <a class="code" href="lua_8h.html#ab969ff78cb1b63efa2bba3bdfa6fff5c">LUA_OK</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="lua_8h.html#aed0bba8f94a9dc573ac77becd0f0c5e9">lua_getglobal</a>(L, <span class="stringliteral">&quot;result&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="lua_8h.html#a2b5321e5370d82564c138e9dd8ffc9a5">lua_isnumber</a>(L, -1)) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            result = <a class="code" href="lua_8h.html#a3237a0507d51d772dadd4c560a75af17">lua_tonumber</a>(L, -1);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span> *errmsg = <a class="code" href="lua_8h.html#ac813fc3bc1886ba17c363d5b4c6e7ef1">lua_tostring</a>(L, -1);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *errmsg = <a class="code" href="lua_8h.html#ac813fc3bc1886ba17c363d5b4c6e7ef1">lua_tostring</a>(L, -1);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="lua_8h.html#afe030a97e84f24dfab3afb598faa2fff">lua_close</a>(L);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_flux.html#aef08a613dc67bc306954e5b7d9be58c9">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_flux.html#aef08a613dc67bc306954e5b7d9be58c9">Flux::setFormula</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *formula) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    this-&gt;formula = <a class="code" href="class_flux.html#a33b15032851cdbefc36e6f80d7fb1876">formula</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_flux.html#a0d8bd0c45fb62737fc868f197bf546a3">   76</a></span>&#160;<a class="code" href="class_flux.html#a1e8f1efffccbc22015d2345e6be7fbb5">Flux::Flux</a>(<a class="code" href="class_system.html">System</a> *from, <a class="code" href="class_system.html">System</a> *to, <span class="keyword">const</span> <span class="keywordtype">char</span> *formula) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a> = from;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = to;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    this-&gt;formula = <a class="code" href="class_flux.html#a33b15032851cdbefc36e6f80d7fb1876">formula</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_flux.html#a2ddc7fa505d43829dc16c4f6eda29235">   82</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_flux.html#a2ddc7fa505d43829dc16c4f6eda29235">Flux::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_flux.html">Flux</a> &amp;flux) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> == flux.<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> &amp;&amp; this-&gt;source == flux.<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_flux.html#a3178d54d24f2517d9a2fbfccffa38c15">   89</a></span>&#160;<a class="code" href="class_flux.html">Flux</a>&amp; <a class="code" href="class_flux.html#a3178d54d24f2517d9a2fbfccffa38c15">Flux::operator= </a>(<span class="keyword">const</span> <a class="code" href="class_flux.html">Flux</a> &amp;flux)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">this</span> == &amp;flux)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    this-&gt;<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a> = flux.<a class="code" href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">source</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    this-&gt;<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a> = flux.<a class="code" href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">target</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_flux_html_ab7d617fbd7f605b9d1c509fbb43bca7f"><div class="ttname"><a href="class_flux.html#ab7d617fbd7f605b9d1c509fbb43bca7f">Flux::execute</a></div><div class="ttdeci">float execute()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00039">flux.cpp:39</a></div></div>
+<div class="ttc" id="aclass_flux_html_aef08a613dc67bc306954e5b7d9be58c9"><div class="ttname"><a href="class_flux.html#aef08a613dc67bc306954e5b7d9be58c9">Flux::setFormula</a></div><div class="ttdeci">void setFormula(const char *formula)</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00072">flux.cpp:72</a></div></div>
+<div class="ttc" id="alauxlib_8h_html_af6e3e3ca0a445a50f34cfc26f89c7d61"><div class="ttname"><a href="lauxlib_8h.html#af6e3e3ca0a445a50f34cfc26f89c7d61">luaL_requiref</a></div><div class="ttdeci">LUALIB_API void() luaL_requiref(lua_State *L, const char *modname, lua_CFunction openf, int glb)</div></div>
+<div class="ttc" id="aclass_flux_html_a3178d54d24f2517d9a2fbfccffa38c15"><div class="ttname"><a href="class_flux.html#a3178d54d24f2517d9a2fbfccffa38c15">Flux::operator=</a></div><div class="ttdeci">Flux &amp; operator=(const Flux &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00089">flux.cpp:89</a></div></div>
+<div class="ttc" id="alua_8h_html_aed0bba8f94a9dc573ac77becd0f0c5e9"><div class="ttname"><a href="lua_8h.html#aed0bba8f94a9dc573ac77becd0f0c5e9">lua_getglobal</a></div><div class="ttdeci">LUA_API int() lua_getglobal(lua_State *L, const char *name)</div></div>
+<div class="ttc" id="alua_8h_html_ac813fc3bc1886ba17c363d5b4c6e7ef1"><div class="ttname"><a href="lua_8h.html#ac813fc3bc1886ba17c363d5b4c6e7ef1">lua_tostring</a></div><div class="ttdeci">#define lua_tostring(L, i)</div><div class="ttdef"><b>Definition:</b> <a href="lua_8h_source.html#l00386">lua.h:386</a></div></div>
+<div class="ttc" id="alua_8h_html_ab969ff78cb1b63efa2bba3bdfa6fff5c"><div class="ttname"><a href="lua_8h.html#ab969ff78cb1b63efa2bba3bdfa6fff5c">LUA_OK</a></div><div class="ttdeci">#define LUA_OK</div><div class="ttdef"><b>Definition:</b> <a href="lua_8h_source.html#l00049">lua.h:49</a></div></div>
+<div class="ttc" id="aclass_flux_html_ad2641b24a1121ec68ea2483636cc6ab6"><div class="ttname"><a href="class_flux.html#ad2641b24a1121ec68ea2483636cc6ab6">Flux::clearSource</a></div><div class="ttdeci">void clearSource()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00030">flux.cpp:30</a></div></div>
+<div class="ttc" id="alauxlib_8h_html_a1a0639bfde6b1e2f6181af45b0137cf5"><div class="ttname"><a href="lauxlib_8h.html#a1a0639bfde6b1e2f6181af45b0137cf5">luaL_dostring</a></div><div class="ttdeci">#define luaL_dostring(L, s)</div><div class="ttdef"><b>Definition:</b> <a href="lauxlib_8h_source.html#l00146">lauxlib.h:146</a></div></div>
+<div class="ttc" id="alua_8h_html_a77807056ba032d64b2def2b57dc53d53"><div class="ttname"><a href="lua_8h.html#a77807056ba032d64b2def2b57dc53d53">lua_pushnumber</a></div><div class="ttdeci">LUA_API void() lua_pushnumber(lua_State *L, lua_Number n)</div></div>
+<div class="ttc" id="aclass_flux_html_a33b15032851cdbefc36e6f80d7fb1876"><div class="ttname"><a href="class_flux.html#a33b15032851cdbefc36e6f80d7fb1876">Flux::formula</a></div><div class="ttdeci">const char * formula</div><div class="ttdef"><b>Definition:</b> <a href="flux_8h_source.html#l00014">flux.h:14</a></div></div>
+<div class="ttc" id="aclass_flux_html_a2ddc7fa505d43829dc16c4f6eda29235"><div class="ttname"><a href="class_flux.html#a2ddc7fa505d43829dc16c4f6eda29235">Flux::operator==</a></div><div class="ttdeci">bool operator==(const Flux &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00082">flux.cpp:82</a></div></div>
+<div class="ttc" id="aclass_flux_html_a55a977018cf85b238aec30e9f587e573"><div class="ttname"><a href="class_flux.html#a55a977018cf85b238aec30e9f587e573">Flux::setTarget</a></div><div class="ttdeci">void setTarget(System *s)</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00022">flux.cpp:22</a></div></div>
+<div class="ttc" id="aclass_flux_html_a1e8f1efffccbc22015d2345e6be7fbb5"><div class="ttname"><a href="class_flux.html#a1e8f1efffccbc22015d2345e6be7fbb5">Flux::Flux</a></div><div class="ttdeci">Flux()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00008">flux.cpp:8</a></div></div>
+<div class="ttc" id="aflux_8h_html"><div class="ttname"><a href="flux_8h.html">flux.h</a></div></div>
+<div class="ttc" id="alauxlib_8h_html_a7d8712fcede90ae93d5a9a7b409c586e"><div class="ttname"><a href="lauxlib_8h.html#a7d8712fcede90ae93d5a9a7b409c586e">luaL_newstate</a></div><div class="ttdeci">LUALIB_API lua_State *() luaL_newstate(void)</div></div>
+<div class="ttc" id="aclass_flux_html_a038f19c7a7aaa1cd788b8cdc4b1a5173"><div class="ttname"><a href="class_flux.html#a038f19c7a7aaa1cd788b8cdc4b1a5173">Flux::getTarget</a></div><div class="ttdeci">System * getTarget()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00026">flux.cpp:26</a></div></div>
+<div class="ttc" id="alua_8hpp_html"><div class="ttname"><a href="lua_8hpp.html">lua.hpp</a></div></div>
+<div class="ttc" id="alua_8h_html_a8da855aa334f38b822cbaceda0d633be"><div class="ttname"><a href="lua_8h.html#a8da855aa334f38b822cbaceda0d633be">lua_setglobal</a></div><div class="ttdeci">LUA_API void() lua_setglobal(lua_State *L, const char *name)</div></div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2system_8h_source.html#l00009">system.h:9</a></div></div>
+<div class="ttc" id="alualib_8h_html_ad9a992586e14f1dd04f4983b8740605a"><div class="ttname"><a href="lualib_8h.html#ad9a992586e14f1dd04f4983b8740605a">luaopen_math</a></div><div class="ttdeci">LUAMOD_API int() luaopen_math(lua_State *L)</div></div>
+<div class="ttc" id="aclass_flux_html"><div class="ttname"><a href="class_flux.html">Flux</a></div><div class="ttdef"><b>Definition:</b> <a href="flux_8h_source.html#l00010">flux.h:10</a></div></div>
+<div class="ttc" id="alua_8h_html_a2b5321e5370d82564c138e9dd8ffc9a5"><div class="ttname"><a href="lua_8h.html#a2b5321e5370d82564c138e9dd8ffc9a5">lua_isnumber</a></div><div class="ttdeci">LUA_API int() lua_isnumber(lua_State *L, int idx)</div></div>
+<div class="ttc" id="alua_8h_html_afe030a97e84f24dfab3afb598faa2fff"><div class="ttname"><a href="lua_8h.html#afe030a97e84f24dfab3afb598faa2fff">lua_close</a></div><div class="ttdeci">LUA_API void() lua_close(lua_State *L)</div></div>
+<div class="ttc" id="aclass_flux_html_a8e9fe98ab473905788ed6a82696a7613"><div class="ttname"><a href="class_flux.html#a8e9fe98ab473905788ed6a82696a7613">Flux::clearTarget</a></div><div class="ttdeci">void clearTarget()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00034">flux.cpp:34</a></div></div>
+<div class="ttc" id="alua_8h_html_a3237a0507d51d772dadd4c560a75af17"><div class="ttname"><a href="lua_8h.html#a3237a0507d51d772dadd4c560a75af17">lua_tonumber</a></div><div class="ttdeci">#define lua_tonumber(L, i)</div><div class="ttdef"><b>Definition:</b> <a href="lua_8h_source.html#l00361">lua.h:361</a></div></div>
+<div class="ttc" id="aclass_flux_html_a12f43f5f956cf6f9d2546ef16931839e"><div class="ttname"><a href="class_flux.html#a12f43f5f956cf6f9d2546ef16931839e">Flux::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition:</b> <a href="flux_8h_source.html#l00012">flux.h:12</a></div></div>
+<div class="ttc" id="aclass_flux_html_aa1a08159c32ebdc38aa7e759c157aa55"><div class="ttname"><a href="class_flux.html#aa1a08159c32ebdc38aa7e759c157aa55">Flux::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition:</b> <a href="flux_8h_source.html#l00013">flux.h:13</a></div></div>
+<div class="ttc" id="alua_8h_html_a28186297f2e9f2de0652504633de8fb3"><div class="ttname"><a href="lua_8h.html#a28186297f2e9f2de0652504633de8fb3">lua_State</a></div><div class="ttdeci">struct lua_State lua_State</div><div class="ttdef"><b>Definition:</b> <a href="lua_8h_source.html#l00057">lua.h:57</a></div></div>
+<div class="ttc" id="aclass_flux_html_af5364ba22c06b0d0f5020e8fad227316"><div class="ttname"><a href="class_flux.html#af5364ba22c06b0d0f5020e8fad227316">Flux::getSource</a></div><div class="ttdeci">System * getSource()</div><div class="ttdef"><b>Definition:</b> <a href="flux_8cpp_source.html#l00018">flux.cpp:18</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

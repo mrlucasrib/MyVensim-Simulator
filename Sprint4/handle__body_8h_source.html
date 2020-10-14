@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de /home/lucas/Documentos/ENGENHARIA DE SOFTWARE/Sprint6/src/handle_body.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a205e11a7435a65be099cd8ad04204a6.html">Sprint6</a></li><li class="navelem"><a class="el" href="dir_0844840ce97f583c64336030f0d78e24.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">handle_body.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="handle__body_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#if !defined( HANDLE_BODY )</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define HANDLE_BODY</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="handle__body_8h.html#aeff79046387df0de04e7de11061a704b">   10</a></span>&#160;<span class="preprocessor">#define DEBUGING</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifdef DEBUGING</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="handle__body_8h.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="handle__body_8h.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="handle__body_8h.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="handle__body_8h.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_handle.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_handle.html">Handle</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_handle.html#a6a72028918adf79c0ff8d9996e5e4107">   30</a></span>&#160;    <a class="code" href="class_handle.html">Handle&lt;T&gt;</a>() {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a> = <span class="keyword">new</span> T;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;attach();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef DEBUGING</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="handle__body_8h.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a>++;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_handle.html#addd59fdf43baa517a06d44e1125b5ab1">   40</a></span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_handle.html">Handle&lt;T&gt;</a>() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;detach();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef DEBUGING</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="handle__body_8h.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a>++;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_handle.html#af304e7014a2e600e235140d246783f85">   48</a></span>&#160;    <a class="code" href="class_handle.html">Handle&lt;T&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_handle.html">Handle</a> &amp;hd) : <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>(hd.<a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>) { <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;attach(); }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_handle.html#a06418155d929707d0a95e27efb8f3b82">   51</a></span>&#160;    <a class="code" href="class_handle.html">Handle&lt;T&gt;</a> &amp;<a class="code" href="class_handle.html#a06418155d929707d0a95e27efb8f3b82">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_handle.html">Handle</a> &amp;hd) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;hd) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            hd.<a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;attach();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>-&gt;detach();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a> = hd.<a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">   63</a></span>&#160;    T *<a class="code" href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">pImpl_</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_body.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_body.html">Body</a> {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_body.html#a7727b0d8c998bbc2942e4c802e31e2eb">   76</a></span>&#160;    <a class="code" href="class_body.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a>() : <a class="code" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">refCount_</a>(0) {}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_body.html#a5d53322c76a6952d096cb7564ac86db1">   80</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_body.html#a5d53322c76a6952d096cb7564ac86db1">attach</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">refCount_</a>++;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifdef DEBUGING</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="handle__body_8h.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a>++;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_body.html#ad481d0c8368db318795c9a0a8fdd3717">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_body.html#ad481d0c8368db318795c9a0a8fdd3717">detach</a>() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (--<a class="code" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">refCount_</a> == 0) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">delete</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef DEBUGING</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="handle__body_8h.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a>++;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_body.html#a59ae961812625b8636071ba61b1a75fc">   99</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_body.html#a59ae961812625b8636071ba61b1a75fc">refCount</a>() { <span class="keywordflow">return</span> <a class="code" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">refCount_</a>; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_body.html#a9b15e54cf881ac0ca64790ca1d50110e">  102</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_body.html#a9b15e54cf881ac0ca64790ca1d50110e">~Body</a>() {}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="class_body.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a>(<span class="keyword">const</span> <a class="code" href="class_body.html">Body</a> &amp;);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_body.html#a18ca8b6719c0d91416e7f4355d04f3f7">  110</a></span>&#160;    <a class="code" href="class_body.html">Body</a> &amp;<a class="code" href="class_body.html#a18ca8b6719c0d91416e7f4355d04f3f7">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_body.html">Body</a> &amp;) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">  112</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_body.html#a70b46681762de310d6a3fba89ba2d721">refCount_</a>;    </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_body_html_a70b46681762de310d6a3fba89ba2d721"><div class="ttname"><a href="class_body.html#a70b46681762de310d6a3fba89ba2d721">Body::refCount_</a></div><div class="ttdeci">int refCount_</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00112">handle_body.h:112</a></div></div>
+<div class="ttc" id="ahandle__body_8h_html_aba38ebae7f83ef57afab8c447dddb6cf"><div class="ttname"><a href="handle__body_8h.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a></div><div class="ttdeci">int numBodyDeleted</div></div>
+<div class="ttc" id="aclass_body_html_a5d53322c76a6952d096cb7564ac86db1"><div class="ttname"><a href="class_body.html#a5d53322c76a6952d096cb7564ac86db1">Body::attach</a></div><div class="ttdeci">void attach()</div><div class="ttdoc">Increases the number of references to this object.</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00080">handle_body.h:80</a></div></div>
+<div class="ttc" id="aclass_handle_html_a16021e57596d7369dfa1a9fadc35c06f"><div class="ttname"><a href="class_handle.html#a16021e57596d7369dfa1a9fadc35c06f">Handle::pImpl_</a></div><div class="ttdeci">T * pImpl_</div><div class="ttdoc">referência para a implementação</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00063">handle_body.h:63</a></div></div>
+<div class="ttc" id="ahandle__body_8h_html_a01128a06118f949a0b24a3d080f515fd"><div class="ttname"><a href="handle__body_8h.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a></div><div class="ttdeci">int numHandleDeleted</div></div>
+<div class="ttc" id="aclass_body_html_a18ca8b6719c0d91416e7f4355d04f3f7"><div class="ttname"><a href="class_body.html#a18ca8b6719c0d91416e7f4355d04f3f7">Body::operator=</a></div><div class="ttdeci">Body &amp; operator=(const Body &amp;)</div><div class="ttdoc">Implementation.</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00110">handle_body.h:110</a></div></div>
+<div class="ttc" id="aclass_body_html_a9b15e54cf881ac0ca64790ca1d50110e"><div class="ttname"><a href="class_body.html#a9b15e54cf881ac0ca64790ca1d50110e">Body::~Body</a></div><div class="ttdeci">virtual ~Body()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00102">handle_body.h:102</a></div></div>
+<div class="ttc" id="aclass_handle_html_a06418155d929707d0a95e27efb8f3b82"><div class="ttname"><a href="class_handle.html#a06418155d929707d0a95e27efb8f3b82">Handle::operator=</a></div><div class="ttdeci">Handle&lt; T &gt; &amp; operator=(const Handle &amp;hd)</div><div class="ttdoc">assignment operator</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00051">handle_body.h:51</a></div></div>
+<div class="ttc" id="ahandle__body_8h_html_aac78cb29dfe4a565da68073b0beebf2f"><div class="ttname"><a href="handle__body_8h.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a></div><div class="ttdeci">int numHandleCreated</div></div>
+<div class="ttc" id="aclass_handle_html"><div class="ttname"><a href="class_handle.html">Handle</a></div><div class="ttdoc">The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;...</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00025">handle_body.h:25</a></div></div>
+<div class="ttc" id="aclass_body_html_ad481d0c8368db318795c9a0a8fdd3717"><div class="ttname"><a href="class_body.html#ad481d0c8368db318795c9a0a8fdd3717">Body::detach</a></div><div class="ttdeci">void detach()</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00089">handle_body.h:89</a></div></div>
+<div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G...</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00073">handle_body.h:73</a></div></div>
+<div class="ttc" id="ahandle__body_8h_html_ac1322042429ed9724fbef55908244f3b"><div class="ttname"><a href="handle__body_8h.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a></div><div class="ttdeci">int numBodyCreated</div></div>
+<div class="ttc" id="aclass_body_html_a7727b0d8c998bbc2942e4c802e31e2eb"><div class="ttname"><a href="class_body.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body::Body</a></div><div class="ttdeci">Body()</div><div class="ttdoc">Constructor: zero references when the object is being built.</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00076">handle_body.h:76</a></div></div>
+<div class="ttc" id="aclass_body_html_a59ae961812625b8636071ba61b1a75fc"><div class="ttname"><a href="class_body.html#a59ae961812625b8636071ba61b1a75fc">Body::refCount</a></div><div class="ttdeci">int refCount()</div><div class="ttdoc">Returns the number of references to this object.</div><div class="ttdef"><b>Definition:</b> <a href="handle__body_8h_source.html#l00099">handle_body.h:99</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

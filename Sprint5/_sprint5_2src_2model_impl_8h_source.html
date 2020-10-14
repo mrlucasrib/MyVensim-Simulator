@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de src/modelImpl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b701342d7f85a2f639b5b3ccd228d5b6.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">modelImpl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint5_2src_2model_impl_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 11/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MYVENSIM_MODELIMPL_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MYVENSIM_MODELIMPL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint5_2src_2model_8h.html">model.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint5_2src_2flow_impl_8h.html">flowImpl.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_model_impl.html">ModelImpl</a> : <span class="keyword">public</span> <a class="code" href="class_model.html">Model</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_model_impl.html#aad5b642a4500713444c44bdadd5d19dc">time</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_model_impl.html">ModelImpl</a> &amp;<a class="code" href="class_model_impl.html#a35a919829bfee6959d5ae555eafd363c">operator=</a>(<a class="code" href="class_model_impl.html">ModelImpl</a> &amp;);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_model_impl.html#a3eda9425ead13c950b2e557942d78441">operator==</a>(<a class="code" href="class_model_impl.html">ModelImpl</a> &amp;);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::vector&lt;Flow *&gt; <a class="code" href="class_model_impl.html#a4329030ed102be07759e52c472509c21">flowContainer</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::vector&lt;System *&gt; <a class="code" href="class_model_impl.html#a056ee40b5c3b86a43a47cfa95b52e009">systemContainer</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_model_impl.html#a7534904f5a4b12ef7a4addc65590189b">   25</a></span>&#160;    std::string <a class="code" href="class_model_impl.html#a7534904f5a4b12ef7a4addc65590189b">name</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_model_impl.html#a081505846c37ce9928f2176d77db4bc8">ModelImpl</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_model_impl.html#a081505846c37ce9928f2176d77db4bc8">ModelImpl</a>(<a class="code" href="class_model_impl.html">ModelImpl</a> *);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model_impl.html#a0a25c538c8d4259eab1a97442cdfbddc">execute</a>(<span class="keywordtype">int</span> start, <span class="keywordtype">int</span> end) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model_impl.html#a503f70cf52d1c793292aae7b5088b24b">remove</a>(<a class="code" href="class_flow.html">Flow</a> *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825">add</a>(<a class="code" href="class_flow.html">Flow</a> *f) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::string <a class="code" href="class_model_impl.html#a6d6ef8f72413650749d9ca9850226a6b">getName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model_impl.html#aa8b0843d27be3d06e19b7b68243b337f">setName</a>(std::string n) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_model_impl.html#addab0c8075722dc27a9a3783c428c0c3">createSystem</a>(<span class="keyword">const</span> std::string &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_model.html">Model</a> *<a class="code" href="class_model_impl.html#a8a9167b35336431e394f0042271620cb">createModel</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_model_impl.html#ae7931d67fd5a20e06f0b8cf2d36f7074">exists</a>(<span class="keyword">const</span> std::string &amp;, <a class="code" href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_flow.html">Flow</a> *<a class="code" href="class_model_impl.html#ae2d22128f6314d6564386a0c01da5855">findFlow</a>(<span class="keyword">const</span> std::string &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_model_impl.html#a8ad7b7e12f57b59f2f73702835caaa9e">findSystem</a>(<span class="keyword">const</span> std::string &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_model_impl.html#addab0c8075722dc27a9a3783c428c0c3">createSystem</a>(<span class="keyword">const</span> std::string &amp;, <span class="keywordtype">double</span> v) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825">add</a>(<a class="code" href="class_system.html">System</a> *s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">   75</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;System *&gt;::iterator <a class="code" href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">systemIterator</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">   76</a></span>&#160;    <span class="keyword">typedef</span> std::vector&lt;Flow *&gt;::iterator <a class="code" href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">flowIterator</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif //MYVENSIM_MODELIMPL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_model_impl_html_a83192186cc587df6c83e3ccaefdbfe5b"><div class="ttname"><a href="class_model_impl.html#a83192186cc587df6c83e3ccaefdbfe5b">ModelImpl::flowIterator</a></div><div class="ttdeci">std::vector&lt; Flow * &gt;::iterator flowIterator</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8h_source.html#l00076">modelImpl.h:76</a></div></div>
+<div class="ttc" id="a_sprint5_2src_2model_8h_html_a1d1cfd8ffb84e947f82999c682b666a7"><div class="ttname"><a href="_sprint5_2src_2model_8h.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_8h_source.html#l00013">model.h:13</a></div></div>
+<div class="ttc" id="a_sprint5_2src_2flow_impl_8h_html"><div class="ttname"><a href="_sprint5_2src_2flow_impl_8h.html">flowImpl.h</a></div></div>
+<div class="ttc" id="aclass_flow_html"><div class="ttname"><a href="class_flow.html">Flow</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_8h_source.html#l00010">flow.h:10</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a8a9167b35336431e394f0042271620cb"><div class="ttname"><a href="class_model_impl.html#a8a9167b35336431e394f0042271620cb">ModelImpl::createModel</a></div><div class="ttdeci">static Model * createModel()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8cpp_source.html#l00121">modelImpl.cpp:121</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a3eda9425ead13c950b2e557942d78441"><div class="ttname"><a href="class_model_impl.html#a3eda9425ead13c950b2e557942d78441">ModelImpl::operator==</a></div><div class="ttdeci">bool operator==(ModelImpl &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00065">modelImpl.cpp:65</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a4329030ed102be07759e52c472509c21"><div class="ttname"><a href="class_model_impl.html#a4329030ed102be07759e52c472509c21">ModelImpl::flowContainer</a></div><div class="ttdeci">std::vector&lt; Flow * &gt; flowContainer</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8h_source.html#l00023">modelImpl.h:23</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a0a25c538c8d4259eab1a97442cdfbddc"><div class="ttname"><a href="class_model_impl.html#a0a25c538c8d4259eab1a97442cdfbddc">ModelImpl::execute</a></div><div class="ttdeci">void execute(int start, int end) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00029">modelImpl.cpp:29</a></div></div>
+<div class="ttc" id="aclass_model_impl_html"><div class="ttname"><a href="class_model_impl.html">ModelImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8h_source.html#l00011">modelImpl.h:11</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_aad5b642a4500713444c44bdadd5d19dc"><div class="ttname"><a href="class_model_impl.html#aad5b642a4500713444c44bdadd5d19dc">ModelImpl::time</a></div><div class="ttdeci">double time</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8h_source.html#l00016">modelImpl.h:16</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_aa8b0843d27be3d06e19b7b68243b337f"><div class="ttname"><a href="class_model_impl.html#aa8b0843d27be3d06e19b7b68243b337f">ModelImpl::setName</a></div><div class="ttdeci">void setName(const char *name) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00078">modelImpl.cpp:78</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a6d6ef8f72413650749d9ca9850226a6b"><div class="ttname"><a href="class_model_impl.html#a6d6ef8f72413650749d9ca9850226a6b">ModelImpl::getName</a></div><div class="ttdeci">const char * getName() const override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00074">modelImpl.cpp:74</a></div></div>
+<div class="ttc" id="a_sprint5_2src_2model_8h_html"><div class="ttname"><a href="_sprint5_2src_2model_8h.html">model.h</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_aca3d3c64275deb96f4180618279b0825"><div class="ttname"><a href="class_model_impl.html#aca3d3c64275deb96f4180618279b0825">ModelImpl::add</a></div><div class="ttdeci">void add(Flow *f) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00015">modelImpl.cpp:15</a></div></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2model_8h_source.html#l00012">model.h:12</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_addab0c8075722dc27a9a3783c428c0c3"><div class="ttname"><a href="class_model_impl.html#addab0c8075722dc27a9a3783c428c0c3">ModelImpl::createSystem</a></div><div class="ttdeci">System * createSystem(const std::string &amp;) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8cpp_source.html#l00101">modelImpl.cpp:101</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a503f70cf52d1c793292aae7b5088b24b"><div class="ttname"><a href="class_model_impl.html#a503f70cf52d1c793292aae7b5088b24b">ModelImpl::remove</a></div><div class="ttdeci">void remove(Flow *) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00020">modelImpl.cpp:20</a></div></div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2system_8h_source.html#l00009">system.h:9</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a081505846c37ce9928f2176d77db4bc8"><div class="ttname"><a href="class_model_impl.html#a081505846c37ce9928f2176d77db4bc8">ModelImpl::ModelImpl</a></div><div class="ttdeci">ModelImpl()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00011">modelImpl.cpp:11</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a7534904f5a4b12ef7a4addc65590189b"><div class="ttname"><a href="class_model_impl.html#a7534904f5a4b12ef7a4addc65590189b">ModelImpl::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8h_source.html#l00025">modelImpl.h:25</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_ae2d22128f6314d6564386a0c01da5855"><div class="ttname"><a href="class_model_impl.html#ae2d22128f6314d6564386a0c01da5855">ModelImpl::findFlow</a></div><div class="ttdeci">Flow * findFlow(const std::string &amp;) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8cpp_source.html#l00125">modelImpl.cpp:125</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a056ee40b5c3b86a43a47cfa95b52e009"><div class="ttname"><a href="class_model_impl.html#a056ee40b5c3b86a43a47cfa95b52e009">ModelImpl::systemContainer</a></div><div class="ttdeci">std::vector&lt; System * &gt; systemContainer</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8h_source.html#l00024">modelImpl.h:24</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_ae7931d67fd5a20e06f0b8cf2d36f7074"><div class="ttname"><a href="class_model_impl.html#ae7931d67fd5a20e06f0b8cf2d36f7074">ModelImpl::exists</a></div><div class="ttdeci">bool exists(const std::string &amp;, Type) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8cpp_source.html#l00083">modelImpl.cpp:83</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a8ad7b7e12f57b59f2f73702835caaa9e"><div class="ttname"><a href="class_model_impl.html#a8ad7b7e12f57b59f2f73702835caaa9e">ModelImpl::findSystem</a></div><div class="ttdeci">System * findSystem(const std::string &amp;) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8cpp_source.html#l00133">modelImpl.cpp:133</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_ad726a1aa1f7a44ac7d2face45c5bbdf1"><div class="ttname"><a href="class_model_impl.html#ad726a1aa1f7a44ac7d2face45c5bbdf1">ModelImpl::systemIterator</a></div><div class="ttdeci">std::vector&lt; System * &gt;::iterator systemIterator</div><div class="ttdef"><b>Definition:</b> <a href="_sprint5_2src_2model_impl_8h_source.html#l00075">modelImpl.h:75</a></div></div>
+<div class="ttc" id="aclass_model_impl_html_a35a919829bfee6959d5ae555eafd363c"><div class="ttname"><a href="class_model_impl.html#a35a919829bfee6959d5ae555eafd363c">ModelImpl::operator=</a></div><div class="ttdeci">ModelImpl &amp; operator=(ModelImpl &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2model_impl_8cpp_source.html#l00061">modelImpl.cpp:61</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

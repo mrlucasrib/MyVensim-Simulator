@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de /home/lucas/Documentos/ENGENHARIA DE SOFTWARE/Sprint6/test/flux_concret.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a205e11a7435a65be099cd8ad04204a6.html">Sprint6</a></li><li class="navelem"><a class="el" href="dir_e9f7ec0dfca5513c5544b6d1da63e3d3.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">flux_concret.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint6_2test_2flux__concret_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 15/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MYVENSIM_FLUX_CONCRET_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MYVENSIM_FLUX_CONCRET_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../src/flowImpl.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_flow_exp.html">FlowExp</a> : <span class="keyword">public</span> <a class="code" href="class_flow_handle.html">FlowHandle</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_flow_exp.html#a1be81405fe4d80349c92862cdd830c98">execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_flow_exp.html#ae93b232d0e20143bd9d37f4eabaef360">   17</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_flow_exp.html#ae93b232d0e20143bd9d37f4eabaef360">FlowExp</a>(<a class="code" href="class_flow_exp.html">FlowExp</a> *f) : <a class="code" href="class_flow_handle.html">FlowHandle</a>(f) {}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_flow_exp.html#ab05b202eef0bd2066c685a6ba1bf2028">   19</a></span>&#160;    <a class="code" href="class_flow_exp.html#ab05b202eef0bd2066c685a6ba1bf2028">FlowExp</a>() : <a class="code" href="class_flow_handle.html">FlowHandle</a>() {}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_flow_exp.html#a34737efbf6f41b3f88efe959e2e0e34e">   22</a></span>&#160;    <a class="code" href="class_flow_exp.html#a34737efbf6f41b3f88efe959e2e0e34e">FlowExp</a>(std::string <span class="keywordtype">id</span>, <a class="code" href="class_system.html">System</a> *s1, <a class="code" href="class_system.html">System</a> *s2) : <a class="code" href="class_flow_handle.html">FlowHandle</a>(std::move(id), s1, s2) {}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="class_flow_log.html">FlowLog</a> : <span class="keyword">public</span> <a class="code" href="class_flow_handle.html">FlowHandle</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_flow_log.html#a9969fde354e71f731792e01f7d20247b">execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_flow_log.html#a4f72ee9b392427cc262e543cabdd2a59">   31</a></span>&#160;    <a class="code" href="class_flow_log.html#a4f72ee9b392427cc262e543cabdd2a59">FlowLog</a>() : <a class="code" href="class_flow_handle.html">FlowHandle</a>() {}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_flow_log.html#a45e6ce8f60a90b7e76aa57b3c1265f71">   33</a></span>&#160;    <a class="code" href="class_flow_log.html#a45e6ce8f60a90b7e76aa57b3c1265f71">FlowLog</a>(std::string <span class="keywordtype">id</span>, <a class="code" href="class_system.html">System</a> *s1, <a class="code" href="class_system.html">System</a> *s2) : <a class="code" href="class_flow_handle.html">FlowHandle</a>(id ,s1, s2) {}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_flow_log.html#a0fbe43f24de27a528c0c92c8485f571f">   35</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_flow_log.html#a0fbe43f24de27a528c0c92c8485f571f">FlowLog</a>(<a class="code" href="class_flow_log.html">FlowLog</a> *f) : <a class="code" href="class_flow_handle.html">FlowHandle</a>(f) {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif //MYVENSIM_FLUX_CONCRET_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_flow_exp_html_a34737efbf6f41b3f88efe959e2e0e34e"><div class="ttname"><a href="class_flow_exp.html#a34737efbf6f41b3f88efe959e2e0e34e">FlowExp::FlowExp</a></div><div class="ttdeci">FlowExp(std::string id, System *s1, System *s2)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00022">flux_concret.h:22</a></div></div>
+<div class="ttc" id="aclass_flow_exp_html_ae93b232d0e20143bd9d37f4eabaef360"><div class="ttname"><a href="class_flow_exp.html#ae93b232d0e20143bd9d37f4eabaef360">FlowExp::FlowExp</a></div><div class="ttdeci">FlowExp(FlowExp *f)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00017">flux_concret.h:17</a></div></div>
+<div class="ttc" id="aclass_flow_log_html_a9969fde354e71f731792e01f7d20247b"><div class="ttname"><a href="class_flow_log.html#a9969fde354e71f731792e01f7d20247b">FlowLog::execute</a></div><div class="ttdeci">float execute() override</div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8cpp_source.html#l00011">flow_concret.cpp:11</a></div></div>
+<div class="ttc" id="aclass_flow_log_html_a45e6ce8f60a90b7e76aa57b3c1265f71"><div class="ttname"><a href="class_flow_log.html#a45e6ce8f60a90b7e76aa57b3c1265f71">FlowLog::FlowLog</a></div><div class="ttdeci">FlowLog(std::string id, System *s1, System *s2)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00033">flux_concret.h:33</a></div></div>
+<div class="ttc" id="aclass_flow_log_html"><div class="ttname"><a href="class_flow_log.html">FlowLog</a></div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8h_source.html#l00023">flow_concret.h:23</a></div></div>
+<div class="ttc" id="aclass_flow_log_html_a4f72ee9b392427cc262e543cabdd2a59"><div class="ttname"><a href="class_flow_log.html#a4f72ee9b392427cc262e543cabdd2a59">FlowLog::FlowLog</a></div><div class="ttdeci">FlowLog()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00031">flux_concret.h:31</a></div></div>
+<div class="ttc" id="aclass_flow_handle_html"><div class="ttname"><a href="class_flow_handle.html">FlowHandle</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2src_2flow_impl_8h_source.html#l00094">flowImpl.h:94</a></div></div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2system_8h_source.html#l00009">system.h:9</a></div></div>
+<div class="ttc" id="aclass_flow_exp_html"><div class="ttname"><a href="class_flow_exp.html">FlowExp</a></div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8h_source.html#l00010">flow_concret.h:10</a></div></div>
+<div class="ttc" id="aclass_flow_exp_html_ab05b202eef0bd2066c685a6ba1bf2028"><div class="ttname"><a href="class_flow_exp.html#ab05b202eef0bd2066c685a6ba1bf2028">FlowExp::FlowExp</a></div><div class="ttdeci">FlowExp()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00019">flux_concret.h:19</a></div></div>
+<div class="ttc" id="aclass_flow_exp_html_a1be81405fe4d80349c92862cdd830c98"><div class="ttname"><a href="class_flow_exp.html#a1be81405fe4d80349c92862cdd830c98">FlowExp::execute</a></div><div class="ttdeci">float execute() override</div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8cpp_source.html#l00007">flow_concret.cpp:7</a></div></div>
+<div class="ttc" id="aclass_flow_log_html_a0fbe43f24de27a528c0c92c8485f571f"><div class="ttname"><a href="class_flow_log.html#a0fbe43f24de27a528c0c92c8485f571f">FlowLog::FlowLog</a></div><div class="ttdeci">FlowLog(FlowLog *f)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint6_2test_2flux__concret_8h_source.html#l00035">flux_concret.h:35</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

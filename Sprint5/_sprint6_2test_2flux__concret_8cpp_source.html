@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de /home/lucas/Documentos/ENGENHARIA DE SOFTWARE/Sprint6/test/flux_concret.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a205e11a7435a65be099cd8ad04204a6.html">Sprint6</a></li><li class="navelem"><a class="el" href="dir_e9f7ec0dfca5513c5544b6d1da63e3d3.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">flux_concret.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint6_2test_2flux__concret_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 15/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint6_2test_2flux__concret_8h.html">flux_concret.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_flow_exp.html#a1be81405fe4d80349c92862cdd830c98">FlowExp::execute</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_flow_impl.html#a73c1681878b13223f7d19d1c0e5b25ae">getSource</a>()-&gt;<a class="code" href="class_system.html#ab018ad94e101fe002f7505b1b9689bd6">getValue</a>() * 0.01;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_flow_log.html#a9969fde354e71f731792e01f7d20247b">FlowLog::execute</a>() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">return</span> 0.01 * <a class="code" href="class_flow_impl.html#ab5c7467d7812bf81abb270dff6d9b272">getTarget</a>()-&gt;<a class="code" href="class_system.html#ab018ad94e101fe002f7505b1b9689bd6">getValue</a>() * (1 - <a class="code" href="class_flow_impl.html#ab5c7467d7812bf81abb270dff6d9b272">getTarget</a>()-&gt;<a class="code" href="class_system.html#ab018ad94e101fe002f7505b1b9689bd6">getValue</a>() / 70);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_sprint6_2test_2flux__concret_8h_html"><div class="ttname"><a href="_sprint6_2test_2flux__concret_8h.html">flux_concret.h</a></div></div>
+<div class="ttc" id="aclass_flow_log_html_a9969fde354e71f731792e01f7d20247b"><div class="ttname"><a href="class_flow_log.html#a9969fde354e71f731792e01f7d20247b">FlowLog::execute</a></div><div class="ttdeci">float execute() override</div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8cpp_source.html#l00011">flow_concret.cpp:11</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a73c1681878b13223f7d19d1c0e5b25ae"><div class="ttname"><a href="class_flow_impl.html#a73c1681878b13223f7d19d1c0e5b25ae">FlowImpl::getSource</a></div><div class="ttdeci">System * getSource() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00017">flowImpl.cpp:17</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_ab5c7467d7812bf81abb270dff6d9b272"><div class="ttname"><a href="class_flow_impl.html#ab5c7467d7812bf81abb270dff6d9b272">FlowImpl::getTarget</a></div><div class="ttdeci">System * getTarget() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00025">flowImpl.cpp:25</a></div></div>
+<div class="ttc" id="aclass_flow_exp_html_a1be81405fe4d80349c92862cdd830c98"><div class="ttname"><a href="class_flow_exp.html#a1be81405fe4d80349c92862cdd830c98">FlowExp::execute</a></div><div class="ttdeci">float execute() override</div><div class="ttdef"><b>Definition:</b> <a href="flow__concret_8cpp_source.html#l00007">flow_concret.cpp:7</a></div></div>
+<div class="ttc" id="aclass_system_html_ab018ad94e101fe002f7505b1b9689bd6"><div class="ttname"><a href="class_system.html#ab018ad94e101fe002f7505b1b9689bd6">System::getValue</a></div><div class="ttdeci">long double getValue()</div><div class="ttdef"><b>Definition:</b> <a href="system_8cpp_source.html#l00021">system.cpp:21</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

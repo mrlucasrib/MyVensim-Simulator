@@ -1,0 +1,9 @@
+<map id="FlowHandle" name="FlowHandle">
+<area shape="rect" id="node1" title=" " alt="" coords="98,955,233,1223"/>
+<area shape="rect" id="node2" href="$class_flow.html" title=" " alt="" coords="5,681,128,905"/>
+<area shape="rect" id="node3" href="$class_handle.html" title=" " alt="" coords="203,733,365,854"/>
+<area shape="rect" id="node4" href="$class_flow_body.html" title=" " alt="" coords="341,336,465,604"/>
+<area shape="rect" id="node5" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="349,49,456,215"/>
+<area shape="rect" id="node6" href="$class_system.html" title=" " alt="" coords="157,5,275,259"/>
+<area shape="rect" id="node7" href="$class_handle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="203,409,317,531"/>
+</map>

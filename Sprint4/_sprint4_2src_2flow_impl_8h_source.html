@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de src/flowImpl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_75ca90b463e290bc0ae808d0d7c82400.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">flowImpl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint4_2src_2flow_impl_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 11/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef MYVENSIM_FLOWIMPL_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define MYVENSIM_FLOWIMPL_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint4_2src_2flow_8h.html">flow.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_flow_impl.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_flow_impl.html">FlowImpl</a> : <span class="keyword">public</span> <a class="code" href="class_flow.html">Flow</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_flow_impl.html#a4f2c03f2e7038a3da93c86cbf006695b">   12</a></span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_flow_impl.html#a4f2c03f2e7038a3da93c86cbf006695b">source</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_flow_impl.html#a33120aeeb3cade890c7ea51a779ca92d">   13</a></span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_flow_impl.html#a33120aeeb3cade890c7ea51a779ca92d">target</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_flow_impl.html#af158c2fb5df73a13813f64db3dc77976">   14</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_flow_impl.html#af158c2fb5df73a13813f64db3dc77976">name</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b">FlowImpl</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b">FlowImpl</a>(<a class="code" href="class_flow_impl.html">FlowImpl</a> *f);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b">FlowImpl</a>(<a class="code" href="class_system.html">System</a> *from, <a class="code" href="class_system.html">System</a> *to);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_flow_impl.html#abb1e0677c5e0d0a94b931ab57187bdcb">setTarget</a>(<a class="code" href="class_system.html">System</a> *s) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_flow_impl.html#ab5c7467d7812bf81abb270dff6d9b272">getTarget</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_system.html">System</a> *<a class="code" href="class_flow_impl.html#a73c1681878b13223f7d19d1c0e5b25ae">getSource</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_flow_impl.html#acf255f5bb33cdc0a09f486f2bab20d99">clearTarget</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_flow_impl.html#acf4fc570ead9b0421638d428f44305c1">clearSource</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_flow_impl.html#a7a57d4e548cf05c9fdc6213658ab5af4">setSource</a>(<a class="code" href="class_system.html">System</a> *) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_flow_impl.html#a1f1c3ae9814001a7329e4893addc332c">~FlowImpl</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_flow_impl.html">FlowImpl</a> &amp;<a class="code" href="class_flow_impl.html#a8a78763e8b34b47252405e3e89fade8b">operator=</a>(<a class="code" href="class_flow_impl.html">FlowImpl</a> &amp;);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_flow_impl.html#a87019d5bea9e595df695ca151e5b3f60">operator==</a>(<a class="code" href="class_flow_impl.html">FlowImpl</a> &amp;);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_flow_impl.html#ac25f4942e540bd6abc9bfc085479c762">setName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *n) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_flow_impl.html#aa6e5ff35bd2f7cc2b8eb8a6fa20ce464">getName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif //MYVENSIM_FLOWIMPL_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_flow_impl_html_ac25f4942e540bd6abc9bfc085479c762"><div class="ttname"><a href="class_flow_impl.html#ac25f4942e540bd6abc9bfc085479c762">FlowImpl::setName</a></div><div class="ttdeci">void setName(const char *n) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00056">flowImpl.cpp:56</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html"><div class="ttname"><a href="class_flow_impl.html">FlowImpl</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8h_source.html#l00010">flowImpl.h:10</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_acf255f5bb33cdc0a09f486f2bab20d99"><div class="ttname"><a href="class_flow_impl.html#acf255f5bb33cdc0a09f486f2bab20d99">FlowImpl::clearTarget</a></div><div class="ttdeci">void clearTarget() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00033">flowImpl.cpp:33</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a33120aeeb3cade890c7ea51a779ca92d"><div class="ttname"><a href="class_flow_impl.html#a33120aeeb3cade890c7ea51a779ca92d">FlowImpl::target</a></div><div class="ttdeci">System * target</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8h_source.html#l00013">flowImpl.h:13</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a8a78763e8b34b47252405e3e89fade8b"><div class="ttname"><a href="class_flow_impl.html#a8a78763e8b34b47252405e3e89fade8b">FlowImpl::operator=</a></div><div class="ttdeci">FlowImpl &amp; operator=(FlowImpl &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00038">flowImpl.cpp:38</a></div></div>
+<div class="ttc" id="aclass_flow_html"><div class="ttname"><a href="class_flow.html">Flow</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_8h_source.html#l00010">flow.h:10</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_af158c2fb5df73a13813f64db3dc77976"><div class="ttname"><a href="class_flow_impl.html#af158c2fb5df73a13813f64db3dc77976">FlowImpl::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8h_source.html#l00014">flowImpl.h:14</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a73c1681878b13223f7d19d1c0e5b25ae"><div class="ttname"><a href="class_flow_impl.html#a73c1681878b13223f7d19d1c0e5b25ae">FlowImpl::getSource</a></div><div class="ttdeci">System * getSource() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00017">flowImpl.cpp:17</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a1f1c3ae9814001a7329e4893addc332c"><div class="ttname"><a href="class_flow_impl.html#a1f1c3ae9814001a7329e4893addc332c">FlowImpl::~FlowImpl</a></div><div class="ttdeci">~FlowImpl() override=default</div></div>
+<div class="ttc" id="aclass_flow_impl_html_acf4fc570ead9b0421638d428f44305c1"><div class="ttname"><a href="class_flow_impl.html#acf4fc570ead9b0421638d428f44305c1">FlowImpl::clearSource</a></div><div class="ttdeci">void clearSource() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00029">flowImpl.cpp:29</a></div></div>
+<div class="ttc" id="aclass_system_html"><div class="ttname"><a href="class_system.html">System</a></div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2src_2system_8h_source.html#l00009">system.h:9</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a4f2c03f2e7038a3da93c86cbf006695b"><div class="ttname"><a href="class_flow_impl.html#a4f2c03f2e7038a3da93c86cbf006695b">FlowImpl::source</a></div><div class="ttdeci">System * source</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8h_source.html#l00012">flowImpl.h:12</a></div></div>
+<div class="ttc" id="a_sprint4_2src_2flow_8h_html"><div class="ttname"><a href="_sprint4_2src_2flow_8h.html">flow.h</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_ab5c7467d7812bf81abb270dff6d9b272"><div class="ttname"><a href="class_flow_impl.html#ab5c7467d7812bf81abb270dff6d9b272">FlowImpl::getTarget</a></div><div class="ttdeci">System * getTarget() override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00025">flowImpl.cpp:25</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_aa6e5ff35bd2f7cc2b8eb8a6fa20ce464"><div class="ttname"><a href="class_flow_impl.html#aa6e5ff35bd2f7cc2b8eb8a6fa20ce464">FlowImpl::getName</a></div><div class="ttdeci">const char * getName() const override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00060">flowImpl.cpp:60</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_abb1e0677c5e0d0a94b931ab57187bdcb"><div class="ttname"><a href="class_flow_impl.html#abb1e0677c5e0d0a94b931ab57187bdcb">FlowImpl::setTarget</a></div><div class="ttdeci">void setTarget(System *s) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00021">flowImpl.cpp:21</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_aa835ccb3c368c683aa95d660175a298b"><div class="ttname"><a href="class_flow_impl.html#aa835ccb3c368c683aa95d660175a298b">FlowImpl::FlowImpl</a></div><div class="ttdeci">FlowImpl()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00007">flowImpl.cpp:7</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a7a57d4e548cf05c9fdc6213658ab5af4"><div class="ttname"><a href="class_flow_impl.html#a7a57d4e548cf05c9fdc6213658ab5af4">FlowImpl::setSource</a></div><div class="ttdeci">void setSource(System *) override</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00052">flowImpl.cpp:52</a></div></div>
+<div class="ttc" id="aclass_flow_impl_html_a87019d5bea9e595df695ca151e5b3f60"><div class="ttname"><a href="class_flow_impl.html#a87019d5bea9e595df695ca151e5b3f60">FlowImpl::operator==</a></div><div class="ttdeci">bool operator==(FlowImpl &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2src_2flow_impl_8cpp_source.html#l00064">flowImpl.cpp:64</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

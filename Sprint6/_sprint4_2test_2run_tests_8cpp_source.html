@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyVenSim: Código-Fonte de /home/lucas/Documentos/ENGENHARIA DE SOFTWARE/Sprint4/test/runTests.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MyVenSim
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_577f45b2f875c975c86e2065dfc90a2d.html">Sprint4</a></li><li class="navelem"><a class="el" href="dir_a7e4607a521ef2af7f6620ad706434e2.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">runTests.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprint4_2test_2run_tests_8cpp.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by lucas on 15/09/2020.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint4_2test_2run_tests_8h.html">runTests.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprint4_2test_2functional__tests_2funcional__test_8h.html">functional_tests/funcional_test.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;unit_tests/flux_test.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;unit_tests/model_test.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;unit_tests/system_test.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classrun_tests.html#a818451dcd677afc49754c71dcbb8ade9">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classrun_tests.html#a818451dcd677afc49754c71dcbb8ade9">runTests::Run</a>() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classfuncional__test.html#ab9e4e9722ca5a9a44233247f13f77621">funcional_test::exponentialTest</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classfuncional__test.html#a0188822e2a5f6398084da2d1da629c51">funcional_test::LogTest</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classfuncional__test.html#a8c9038fa088a062aeb69f69493fc0cc2">funcional_test::ultimateTest</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classflux__test.html#af01928caa0b01a72493b54ec5cef4997">flux_test::getSource</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classflux__test.html#ad1e18f94deebc62462af2e1e0d054a36">flux_test::setSource</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classflux__test.html#aae65f4c5a2c26d23b0678f7d83de0e5f">flux_test::getTarget</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classflux__test.html#a1e3452aa949e638f37e03d23790c36df">flux_test::setTarget</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classflux__test.html#a882d389f6738196790d76e7a2b0ae727">flux_test::clearSource</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classflux__test.html#a0de8d162007aef012a650b1a3df9755c">flux_test::clearTarget</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classflux__test.html#a212237add30f43bdccd81bb2a2cbc68f">flux_test::comparisonTest</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classflux__test.html#a168cf6379db97fb7fc04ee620a1ff3a4">flux_test::copyTest</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classmodel__test.html#a808f429e5fa42808fe68e36a0d190cb1">model_test::addTest</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classmodel__test.html#a3cc84fa1f29c28a4170f369f2af8c974">model_test::removeTest</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classmodel__test.html#ad9a2d78a4d1d39f24852f88310a6586e">model_test::comparisonTest</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classmodel__test.html#aba0aa651e950944106bd0ef21dc4df28">model_test::copyTest</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classsystem__test.html#ad7fad67579ec49e638b0d23ad451266d">system_test::SystemImplTest</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classsystem__test.html#aaf1eb38fde8461944b2edf565590f658">system_test::getValueTest</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classsystem__test.html#a897c51bf36d7540a71b4b32aca7e9c1f">system_test::setValueTest</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classsystem__test.html#a0abbfd306f23d89ec59a6a19cd532a87">system_test::comparisonTest</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_sprint4_2test_2run_tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   36</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_sprint4_2test_2run_tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classrun_tests.html#a818451dcd677afc49754c71dcbb8ade9">runTests::Run</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassflux__test_html_a1e3452aa949e638f37e03d23790c36df"><div class="ttname"><a href="classflux__test.html#a1e3452aa949e638f37e03d23790c36df">flux_test::setTarget</a></div><div class="ttdeci">static void setTarget()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00031">flux_test.cpp:31</a></div></div>
+<div class="ttc" id="aclassmodel__test_html_aba0aa651e950944106bd0ef21dc4df28"><div class="ttname"><a href="classmodel__test.html#aba0aa651e950944106bd0ef21dc4df28">model_test::copyTest</a></div><div class="ttdeci">static void copyTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2model__test_8cpp_source.html#l00042">model_test.cpp:42</a></div></div>
+<div class="ttc" id="aclassflux__test_html_a212237add30f43bdccd81bb2a2cbc68f"><div class="ttname"><a href="classflux__test.html#a212237add30f43bdccd81bb2a2cbc68f">flux_test::comparisonTest</a></div><div class="ttdeci">static void comparisonTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00054">flux_test.cpp:54</a></div></div>
+<div class="ttc" id="aclassfuncional__test_html_a8c9038fa088a062aeb69f69493fc0cc2"><div class="ttname"><a href="classfuncional__test.html#a8c9038fa088a062aeb69f69493fc0cc2">funcional_test::ultimateTest</a></div><div class="ttdeci">static void ultimateTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2test_2funcional__test_8cpp_source.html#l00042">funcional_test.cpp:42</a></div></div>
+<div class="ttc" id="aclassmodel__test_html_a808f429e5fa42808fe68e36a0d190cb1"><div class="ttname"><a href="classmodel__test.html#a808f429e5fa42808fe68e36a0d190cb1">model_test::addTest</a></div><div class="ttdeci">static void addTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2model__test_8cpp_source.html#l00011">model_test.cpp:11</a></div></div>
+<div class="ttc" id="aclasssystem__test_html_ad7fad67579ec49e638b0d23ad451266d"><div class="ttname"><a href="classsystem__test.html#ad7fad67579ec49e638b0d23ad451266d">system_test::SystemImplTest</a></div><div class="ttdeci">static void SystemImplTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2system__test_8cpp_source.html#l00009">system_test.cpp:9</a></div></div>
+<div class="ttc" id="aclassfuncional__test_html_a0188822e2a5f6398084da2d1da629c51"><div class="ttname"><a href="classfuncional__test.html#a0188822e2a5f6398084da2d1da629c51">funcional_test::LogTest</a></div><div class="ttdeci">static void LogTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2test_2funcional__test_8cpp_source.html#l00027">funcional_test.cpp:27</a></div></div>
+<div class="ttc" id="aclasssystem__test_html_a0abbfd306f23d89ec59a6a19cd532a87"><div class="ttname"><a href="classsystem__test.html#a0abbfd306f23d89ec59a6a19cd532a87">system_test::comparisonTest</a></div><div class="ttdeci">static void comparisonTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2system__test_8cpp_source.html#l00027">system_test.cpp:27</a></div></div>
+<div class="ttc" id="aclassmodel__test_html_a3cc84fa1f29c28a4170f369f2af8c974"><div class="ttname"><a href="classmodel__test.html#a3cc84fa1f29c28a4170f369f2af8c974">model_test::removeTest</a></div><div class="ttdeci">static void removeTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2model__test_8cpp_source.html#l00020">model_test.cpp:20</a></div></div>
+<div class="ttc" id="aclassmodel__test_html_ad9a2d78a4d1d39f24852f88310a6586e"><div class="ttname"><a href="classmodel__test.html#ad9a2d78a4d1d39f24852f88310a6586e">model_test::comparisonTest</a></div><div class="ttdeci">static void comparisonTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2model__test_8cpp_source.html#l00030">model_test.cpp:30</a></div></div>
+<div class="ttc" id="aclassflux__test_html_af01928caa0b01a72493b54ec5cef4997"><div class="ttname"><a href="classflux__test.html#af01928caa0b01a72493b54ec5cef4997">flux_test::getSource</a></div><div class="ttdeci">static void getSource()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00010">flux_test.cpp:10</a></div></div>
+<div class="ttc" id="aclassflux__test_html_ad1e18f94deebc62462af2e1e0d054a36"><div class="ttname"><a href="classflux__test.html#ad1e18f94deebc62462af2e1e0d054a36">flux_test::setSource</a></div><div class="ttdeci">static void setSource()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00017">flux_test.cpp:17</a></div></div>
+<div class="ttc" id="aclassfuncional__test_html_ab9e4e9722ca5a9a44233247f13f77621"><div class="ttname"><a href="classfuncional__test.html#ab9e4e9722ca5a9a44233247f13f77621">funcional_test::exponentialTest</a></div><div class="ttdeci">static void exponentialTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint3_2test_2funcional__test_8cpp_source.html#l00011">funcional_test.cpp:11</a></div></div>
+<div class="ttc" id="aclassflux__test_html_a168cf6379db97fb7fc04ee620a1ff3a4"><div class="ttname"><a href="classflux__test.html#a168cf6379db97fb7fc04ee620a1ff3a4">flux_test::copyTest</a></div><div class="ttdeci">static void copyTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00063">flux_test.cpp:63</a></div></div>
+<div class="ttc" id="a_sprint4_2test_2run_tests_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="_sprint4_2test_2run_tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2run_tests_8cpp_source.html#l00036">runTests.cpp:36</a></div></div>
+<div class="ttc" id="aclassflux__test_html_a882d389f6738196790d76e7a2b0ae727"><div class="ttname"><a href="classflux__test.html#a882d389f6738196790d76e7a2b0ae727">flux_test::clearSource</a></div><div class="ttdeci">static void clearSource()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00038">flux_test.cpp:38</a></div></div>
+<div class="ttc" id="aclassrun_tests_html_a818451dcd677afc49754c71dcbb8ade9"><div class="ttname"><a href="classrun_tests.html#a818451dcd677afc49754c71dcbb8ade9">runTests::Run</a></div><div class="ttdeci">static void Run()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2run_tests_8cpp_source.html#l00011">runTests.cpp:11</a></div></div>
+<div class="ttc" id="aclassflux__test_html_aae65f4c5a2c26d23b0678f7d83de0e5f"><div class="ttname"><a href="classflux__test.html#aae65f4c5a2c26d23b0678f7d83de0e5f">flux_test::getTarget</a></div><div class="ttdeci">static void getTarget()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00024">flux_test.cpp:24</a></div></div>
+<div class="ttc" id="a_sprint4_2test_2run_tests_8h_html"><div class="ttname"><a href="_sprint4_2test_2run_tests_8h.html">runTests.h</a></div></div>
+<div class="ttc" id="aclasssystem__test_html_aaf1eb38fde8461944b2edf565590f658"><div class="ttname"><a href="classsystem__test.html#aaf1eb38fde8461944b2edf565590f658">system_test::getValueTest</a></div><div class="ttdeci">static void getValueTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2system__test_8cpp_source.html#l00015">system_test.cpp:15</a></div></div>
+<div class="ttc" id="aclasssystem__test_html_a897c51bf36d7540a71b4b32aca7e9c1f"><div class="ttname"><a href="classsystem__test.html#a897c51bf36d7540a71b4b32aca7e9c1f">system_test::setValueTest</a></div><div class="ttdeci">static void setValueTest()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2system__test_8cpp_source.html#l00020">system_test.cpp:20</a></div></div>
+<div class="ttc" id="a_sprint4_2test_2functional__tests_2funcional__test_8h_html"><div class="ttname"><a href="_sprint4_2test_2functional__tests_2funcional__test_8h.html">funcional_test.h</a></div></div>
+<div class="ttc" id="aclassflux__test_html_a0de8d162007aef012a650b1a3df9755c"><div class="ttname"><a href="classflux__test.html#a0de8d162007aef012a650b1a3df9755c">flux_test::clearTarget</a></div><div class="ttdeci">static void clearTarget()</div><div class="ttdef"><b>Definition:</b> <a href="_sprint4_2test_2unit__tests_2flux__test_8cpp_source.html#l00046">flux_test.cpp:46</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
